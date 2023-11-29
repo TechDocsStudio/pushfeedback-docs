@@ -1,0 +1,92 @@
+---
+sidebar_position: 1
+---
+
+# Layout
+
+The PushFeedback button is highly customizable, allowing you to customize its behavior to suit your application's needs.
+This page lists all available properties you can use to adjust the behavior and appearance of the PushFeedback button in your application.
+
+## Usage
+
+To customize the properties, you need to set the appropriate attributes on the `<feedback-button>` element in your HTML. For example:
+
+```html
+<feedback-button project="YOUR_PROJECT_ID" button-style="dark" hide-icon="true">Feedback</feedback-button>
+```
+
+## Properties
+
+The table below lists all the available properties you can set:
+
+| Property               | Description                                                                                   |
+|------------------------|-----------------------------------------------------------------------------------------------|
+| `project`              | **Required**<br />**Type**: `string`<br /><br />The project ID.         |
+| `button-position`      | **Type**: `string`<br />**Default value**: `default`<br />**Available values:** `default`, `bottom-right`, `center-right`<br /><br />Position of the button.|
+| `button-style`         | **Type**: `string`<br />**Default value**: `default`<br />**Available values:** `default`, `dark`, `light`<br /><br />Style of the button.|
+| `custom-font`          | **Type**: `boolean`<br />**Default value**: `false`<br /><br />When set to `true`, the [Inter font](https://fonts.google.com/specimen/Inter) will not be loaded. Useful if your site already uses a different font, enabling a quicker load time.|
+| `hide-email`           | **Type**: `boolean`<br />**Default value**: `false`<br /><br />Whether to hide the email input. |
+| `email-address`        | **Type**: `string`<br /><br />Initial value for the email input field. |
+| `hide-icon`            | **Type**: `boolean`<br />**Default value**: `false`<br /><br />Whether to hide the button icon.|
+| `hide-screenshot-button` | **Type**: `boolean`<br />**Default value**: `false`<br /><br />Whether to hide the screenshot button.|
+| `modal-position`       | **Type**: `string`<br />**Default value**: `center`<br />**Available values:** `center`, `sidebar-right`, `sidebar-left`, `top-right`, `top-left`, `bottom-right`, `bottom-left`, `center-right`, `center-left`<br /><br />Position of the feedback modal.|
+| `hide-privacy-policy` | **Type**: `boolean`<br />**Default value**: `true`<br /><br />Whether to hide the privacy policy checkbox. |
+| `privacy-policy-text`  | **Type**: `boolean`<br />**Default value**: `I have read and expressly consent to the terms of the <a href='https://pushfeedback.com/privacy'>Privacy Policy</a>.`<br /><br />Privacy policy text. |
+| `hide-ratings`        | **Type**: `boolean`<br />**Default value**: `false` <br /><br /> Wether to hide the ratings input. |
+
+## Examples
+
+Here you'll find practical examples to guide you in customizing the PushFeedback button for various use cases.
+
+### Change the button style
+
+<iframe height="700" style={{width: '100%'}}  scrolling="no" title="Feedback button styles" src="https://codepen.io/David-Garcia-the-bashful/embed/rNQrojP?default-tab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/David-Garcia-the-bashful/pen/rNQrojP">
+  Feedback button styles</a> by David Garcia (<a href="https://codepen.io/David-Garcia-the-bashful">@David-Garcia-the-bashful</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+### Create a floating button
+
+<iframe height="700" style={{width: '100%'}} scrolling="no" title="Floating feedback buttons" src="https://codepen.io/David-Garcia-the-bashful/embed/PoxBXmm?default-tab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/David-Garcia-the-bashful/pen/PoxBXmm">
+  Floating feedback buttons</a> by David Garcia (<a href="https://codepen.io/David-Garcia-the-bashful">@David-Garcia-the-bashful</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+### Add the widget to any button
+
+<iframe height="700" style={{width: '100%'}} scrolling="no" title="Untitled" src="https://codepen.io/David-Garcia-the-bashful/embed/poQxyeY?default-tab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/David-Garcia-the-bashful/pen/poQxyeY">
+  Untitled</a> by David Garcia (<a href="https://codepen.io/David-Garcia-the-bashful">@David-Garcia-the-bashful</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+### Change modal position
+
+:::info 
+For an optimal viewing experience of this demo, select the **0.25x** zoom level on CodePen.
+:::
+
+<iframe height="700" style={{width: '100%'}}  scrolling="no" title="Feedback widget modal position" src="https://codepen.io/David-Garcia-the-bashful/embed/poQZqwZ?default-tab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/David-Garcia-the-bashful/pen/poQZqwZ">
+  Feedback widget modal position</a> by David Garcia (<a href="https://codepen.io/David-Garcia-the-bashful">@David-Garcia-the-bashful</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+
+### Prefill email
+
+<iframe height="700" style={{width: '100%'}} scrolling="no" title="Prefill email" src="https://codepen.io/David-Garcia-the-bashful/embed/yLQROXr?default-tab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/David-Garcia-the-bashful/pen/yLQROXr">
+  Prefill email</a> by David Garcia (<a href="https://codepen.io/David-Garcia-the-bashful">@David-Garcia-the-bashful</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+### Enable privacy policy
+
+<iframe height="700" style={{width: '100%'}} scrolling="no" title="Feedback widget privacy policy" src="https://codepen.io/David-Garcia-the-bashful/embed/OJrQPzp?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/David-Garcia-the-bashful/pen/OJrQPzp">
+  Untitled</a> by David Garcia (<a href="https://codepen.io/David-Garcia-the-bashful">@David-Garcia-the-bashful</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
