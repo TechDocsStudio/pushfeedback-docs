@@ -58,7 +58,7 @@ The tables below lists all the available properties you can override:
 }
 ```
 
-###  Feedback modal properties
+### Feedback modal properties
 
 ```css
 :root {
@@ -105,7 +105,15 @@ The tables below lists all the available properties you can override:
     --feedback-modal-message-font-size: var(--feedback-text-font-size);
     --feedback-modal-modal-wrapper-z-index: 300;
     --feedback-modal-rating-button-color: var(--feedback-text-color);
-    --feedback-modal-rating-button-selected-color: var(--feedback-highlight-color);
+    --feedback-modal-rating-button-selected-color: var(--feedback-primary-color);
+    --feedback-modal-rating-button-stars-selected-color: var(--feedback-highlight-color);
+}
+```
+
+### Screenshot mode properties
+
+```css
+:root {
     --feedback-modal-screenshot-bg-color: rgba(0, 0, 0, 0.4);
     --feedback-modal-screenshot-close-color: var(--feedback-dark-color);
     --feedback-modal-screenshot-header-bg-color: var(--feedback-white-color);
@@ -114,7 +122,6 @@ The tables below lists all the available properties you can override:
     --feedback-modal-screnshot-z-index: 100;
 }
 ```
-
 
 ### Dark mode properties
 
@@ -125,7 +132,7 @@ The tables below lists all the available properties you can override:
     --feedback-modal-button-bg-color-active: transparent;
     --feedback-modal-button-icon-color: var(--feedback-white-color);
     --feedback-modal-button-text-color: var(--feedback-white-color);
-    --feedback-modal-close-bg-color: var(--feedback-light-color);
+    --feedback-modal-close-bg-color: transparent;
     --feedback-modal-close-color: var(--feedback-white-color);
     --feedback-modal-content-bg-color: var(--feedback-dark-color);
     --feedback-modal-content-text-color: var(--feedback-text-color);
@@ -133,7 +140,7 @@ The tables below lists all the available properties you can override:
     --feedback-modal-header-text-color: var(--feedback-white-color);
     --feedback-modal-input-bg-color: var(--feedback-light-color);
     --feedback-modal-input-text-color: var(--feedback-white-color);
-    --feedback-modal-rating-button-color: var(--feedback-text-color);
+    --feedback-modal-rating-button-color: var(--feedback-white-color);
     --feedback-modal-screenshot-close-color: var(--feedback-white-color);
     --feedback-modal-screenshot-header-bg-color: var(--feedback-dark-color);
     --feedback-modal-screenshot-header-text-color: var(--feedback-white-color);

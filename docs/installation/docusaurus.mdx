@@ -2,6 +2,9 @@
 sidebar_label: Docusaurus
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Feedback widget for Docusaurus
 
 Here's a step-by-step guide to help you install PushFeedback in your Docusaurus project using NPM.
@@ -28,9 +31,18 @@ To integrate the PushFeedback widget into your Docusaurus site:
 
 1. With your terminal still open, run the following command to install PushFeedback:
 
-    ```console
-    npm install docusaurus-pushfeedback
-    ```
+    <Tabs>
+    <TabItem value="3x" label="Docusaurus 3.x" default>
+
+        npm install docusaurus-pushfeedback
+
+    </TabItem>
+    <TabItem value="2x" label="Docusaurus 2.X">
+
+        npm install docusaurus-pushfeedback@0.1.7
+
+    </TabItem>
+    </Tabs>
 
 1. Add the plugin to your Docusaurus config file `docusaurus.config.js`:
 
