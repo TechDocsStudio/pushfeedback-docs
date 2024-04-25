@@ -6,6 +6,8 @@ sidebar_label: Gatsby
 
 Here's a step-by-step guide to help you install PushFeedback in your Gatsby project using NPM.
 
+![Feedback wiget for docs screenshot](./images/feedback-widget-docs.png)
+
 ## Prerequisites
 
 Before you begin, you'll need to have the following:

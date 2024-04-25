@@ -6,6 +6,8 @@ sidebar_label: Next.js
 
 Here's a step-by-step guide to help you install PushFeedback in your Next.js project using NPM.
 
+![Feedback wiget for docs screenshot](./images/feedback-widget-docs.png)
+
 ## Prerequisites
 
 Before you begin, you'll need to have the following:

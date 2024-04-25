@@ -6,6 +6,8 @@ sidebar_label: Wordpress
 
 Here's a step-by-step guide to help you install PushFeedback in your Wordpress site.
 
+![Feedback wiget for docs screenshot](./images/feedback-widget-docs.png)
+
 ## Prerequisites
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).

@@ -6,6 +6,8 @@ sidebar_label: Jekyll
 
 Here's a step-by-step guide to help you install PushFeedback in your Jekyll project.
 
+![Feedback wiget for docs screenshot](./images/feedback-widget-docs.png)
+
 ## Prerequisites
 
 Before you begin, you'll need to have the following:
