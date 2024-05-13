@@ -120,6 +120,10 @@ To further customize the style of the PushFeedback widget in Docusaurus, such as
 
 This alternative installation method is best for those projects that require granular control over the widget's positioning.
 
+For example, you can use it to embedded it at the end of every page as follows:
+
+![Feedback inline end page](./images/feedback-end-page.png)
+
 To integrate the PushFeedback widget into your Docusaurus site:
 
 1. Open your terminal or command prompt. Navigate to your project's root directory using the `cd` command:
@@ -139,41 +143,65 @@ To integrate the PushFeedback widget into your Docusaurus site:
 1. For Docusaurus, the best approach is to swizzle the original footer component to embed the PushFeedback button. This ensures the feedback button is loaded just before the closing body tag for optimal performance. Begin by using the npm run swizzle command to start the swizzle process:
 
     ```console
-    npm run swizzle @docusaurus/theme-classic Footer
+    npm run swizzle @docusaurus/theme-classic DocItem/Footer
     ```
 
-    When prompted with the question: `Do you want to --wrap the component instead? (Y/N)`, choose **Y** for "Yes".
+    When prompted with the question: `Which swizzle action do you want to do? `, choose **Wrap**.
 
     By choosing to wrap, Docusaurus will create a wrapper component for the Footer in the `src/theme` directory. This allows you to extend the original footer component without modifying its intrinsic content.
 
-1. After swizzling, navigate to `src/theme/Footer/index.js` in your project directory. Now, integrate the PushFeedback button:
+1. After swizzling, navigate to `src/theme/DocItem/Footer/index.js` in your project directory. Now, integrate the PushFeedback button:
 
-  ```js
+    ```js
     import React, {useEffect} from 'react';
-    import Footer from '@theme-original/Footer';
-
+    import Footer from '@theme-original/DocItem/Footer';
+    
     import { FeedbackButton } from 'pushfeedback-react';
     import { defineCustomElements } from 'pushfeedback/loader';
     import 'pushfeedback/dist/pushfeedback/pushfeedback.css';
 
+    function FeedbackWidget() {
+        const buttonThumbsUp = <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>;
+        const buttonThumbsDown = <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>;
+        // Replace with your <PROJECT_ID>
+        const projectId = '<PROJECT_ID>';
+
+        useEffect(() => {
+            if (typeof window !== 'undefined') {
+            defineCustomElements(window);
+            }
+        }, []);
+        
+        
+        return(
+            <div className="feedback-widget margin-top--md margin-bottom--md">
+                <div className="margin-bottom--sm">
+                <b>Was this helpful?</b>
+                </div>
+                <div className="button button--outline button--primary button--sm">
+                    <FeedbackButton project={projectId} rating="1" custom-font="True" button-style="default" modal-position="center">
+                    {buttonThumbsUp}
+                    </FeedbackButton>
+                </div>
+                <div className="button button--outline button--primary button--sm margin-left--sm">
+                    <FeedbackButton project={projectId} rating="0" custom-font="True" button-style="default" modal-position="center">
+                    {buttonThumbsDown}
+                    </FeedbackButton>
+                </div>
+            </div>
+        );
+    }
+
     export default function FooterWrapper(props) {
-
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-        defineCustomElements(window);
-        }
-    }, []);
-
-    return (
-        <>
-        <FeedbackButton project="<YOUR_PROJECT_ID>" button-position="default" modal-position="center" button-style="light">Feedback</FeedbackButton>
-        <Footer {...props} />
-        </>
-    )
-    }  
+        return (
+            <>
+            <FeedbackWidget/>
+            <Footer {...props} />
+            </>
+        );
+    }
     ```
 
-    Replace `<YOUR_PROJECT_ID>` with your project's ID from the [PushFeedback dashboard](../quickstart.md#2-create-a-project).
+    Replace `<PROJECT_ID>` with your project's ID from the [PushFeedback dashboard](../quickstart.md#2-create-a-project).
 
 1. Start your Docusaurus project by running `npm start` or `yarn start` in your terminal. Once it compiles successfully, verify that the feedback button appears and functions correctly on your site.
-
