@@ -168,26 +168,29 @@ To integrate the PushFeedback widget into your Docusaurus site:
 
         useEffect(() => {
             if (typeof window !== 'undefined') {
-            defineCustomElements(window);
+                defineCustomElements(window);
             }
         }, []);
-        
-        
+
         return(
             <div className="feedback-widget margin-top--md margin-bottom--md">
                 <div className="margin-bottom--sm">
-                <b>Was this helpful?</b>
+                    <b>Was this helpful?</b>
                 </div>
-                <div className="button button--outline button--primary button--sm">
+                <span class="feedback-widget-positive">
                     <FeedbackButton project={projectId} rating="1" custom-font="True" button-style="default" modal-position="center">
-                    {buttonThumbsUp}
+                        <button className="button button--outline button--primary button--sm" title="Yes">
+                            {buttonThumbsUp}
+                        </button>
                     </FeedbackButton>
-                </div>
-                <div className="button button--outline button--primary button--sm margin-left--sm">
+                </span>
+                <span class="feedback-widget-negative margin-left--sm">
                     <FeedbackButton project={projectId} rating="0" custom-font="True" button-style="default" modal-position="center">
-                    {buttonThumbsDown}
+                        <button className="button button--outline button--primary button--sm" title="No">
+                            {buttonThumbsDown}
+                        </button>
                     </FeedbackButton>
-                </div>
+                </span>
             </div>
         );
     }
