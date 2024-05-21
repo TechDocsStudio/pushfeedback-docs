@@ -30,7 +30,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'es'],
   },
 
   presets: [
@@ -57,14 +57,6 @@ const config = {
   ],
   plugins: [
     require.resolve('docusaurus-lunr-search'),
-    [
-      'docusaurus-pushfeedback',{
-        project: 'wlkz1eomrs',
-        buttonStyle: 'dark',
-        buttonPosition: 'center-right',
-        modalPosition: 'sidebar-right'
-      }
-    ],
     'docusaurus-plugin-image-zoom',
   ],
   themeConfig:
@@ -77,6 +69,12 @@ const config = {
           alt: 'PushFeedback',
           src: 'img/logo.png',
         },
+        items: [
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+        ],  
       },
       colorMode: {
         defaultMode: 'light',

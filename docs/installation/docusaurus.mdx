@@ -68,7 +68,7 @@ To integrate the PushFeedback widget into your Docusaurus site:
 
 You can customize the PushFeedback widget to suit your needs. For example, you can change the widget's position, color, and more.
 
-To do so, you can add any of the following [configuration](../configuration/layout.mdx) options to the plugin formatted as camelCase.
+To do so, you can add any of the following [configuration](../configuration/layout.mdx) and [text](../configuration/text.mdx) options to the plugin or formatted as camelCase.
 
 Here's an example:
 
@@ -80,6 +80,7 @@ plugins: [
             buttonPosition: 'center-right',
             modalPosition: 'sidebar-right',
             buttonStyle: 'dark',
+            modalTitle: 'Share your thoughts'
         }
     ]
 ],
@@ -120,7 +121,7 @@ To further customize the style of the PushFeedback widget in Docusaurus, such as
 
 This alternative installation method is best for those projects that require granular control over the widget's positioning.
 
-For example, you can use it to embedded it at the end of every page as follows:
+For example, you can use it to embedded PushFeedback at the end of every page as follows:
 
 ![Feedback inline end page](./images/feedback-end-page.png)
 
@@ -140,7 +141,11 @@ To integrate the PushFeedback widget into your Docusaurus site:
     npm install pushfeedback-react
     ```
 
-1. For Docusaurus, the best approach is to swizzle the original footer component to embed the PushFeedback button. This ensures the feedback button is loaded just before the closing body tag for optimal performance. Begin by using the npm run swizzle command to start the swizzle process:
+    :::tip
+    In this setup, the `docusaurus-pushfeedback` package is not required. You can uninstall it by running `npm uninstall docusaurus-pushfeedback`.
+    :::
+
+1. For Docusaurus, the best approach is to swizzle the original doc footer component to embed the PushFeedback button. Begin by using the npm run swizzle command to start the swizzle process:
 
     ```console
     npm run swizzle @docusaurus/theme-classic DocItem/Footer
@@ -206,5 +211,163 @@ To integrate the PushFeedback widget into your Docusaurus site:
     ```
 
     Replace `<PROJECT_ID>` with your project's ID from the [PushFeedback dashboard](../quickstart.md#2-create-a-project).
+    
+1. Start your Docusaurus project by running `npm start` or `yarn start` in your terminal. Once it compiles successfully, verify that the feedback button appears and functions correctly on your site.
+
+## Advanced setup: Multilingual support
+
+This installation method is best for projects that need to support multiple languages.
+
+Example:
+
+![Feedback widget i18n](./images/feedback-widget-i18n.png)
+
+:::info
+Before you start with this guide, your docusaurus site must have [i18n](https://docusaurus.io/docs/i18n/tutorial) enabled.
+:::
+
+To integrate the PushFeedback widget into your Docusaurus site:
+
+1. Open your terminal or command prompt. Navigate to your project's root directory using the `cd` command:
+
+    ```console
+    cd path/to/your/project
+    ```
+    
+    Replace `path/to/your/project` with your project's actual directory path.
+
+1. With your terminal still open, run the following command to install PushFeedback:
+
+    ```console
+    npm install pushfeedback-react
+    ```
+
+    :::tip
+    In this setup, the `docusaurus-pushfeedback` package is not required. You can uninstall it by running `npm uninstall docusaurus-pushfeedback`.
+    :::
+
+1. For Docusaurus, the best approach is to swizzle the original footer component to embed the PushFeedback button. This ensures the feedback button is loaded just before the closing body tag for optimal performance. Begin by using the npm run swizzle command to start the swizzle process:
+
+    ```console
+    npm run swizzle @docusaurus/theme-classic Footer
+    ```
+
+    When prompted with the question: `Which swizzle action do you want to do? `, choose **Wrap**.
+
+    By choosing to wrap, Docusaurus will create a wrapper component for the Footer in the `src/theme` directory. This allows you to extend the original footer component without modifying its intrinsic content.
+
+1. After swizzling, navigate to `src/theme/Footer/index.js` in your project directory. Replace the content with the following to integrate the PushFeedback button:
+
+    ```js
+    import React, { useEffect } from 'react';
+    import Footer from '@theme-original/Footer';
+    import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+    import { FeedbackButton } from 'pushfeedback-react';
+    import { defineCustomElements } from 'pushfeedback/loader';
+    import 'pushfeedback/dist/pushfeedback/pushfeedback.css';
+
+    function FeedbackWidget() {
+        const { i18n } = useDocusaurusContext();
+        const language = i18n.currentLocale;
+        // Replace with your actual project ID
+        const projectId = '<PROJECT_ID>'; 
+
+        // Replace with your project supported languages
+        const placeholders = {
+            en: {
+            feedbackButtonText: "Feedback",
+                emailPlaceholder: "Enter your email",
+                errorMessage: "Please try again later.",
+                modalTitleError403: "The request URL does not match the one defined in PushFeedback for this project.",
+                modalTitleError404: "We could not find the provided project id in PushFeedback.",
+                messagePlaceholder: "Comments",
+                modalTitle: "Share your feedback",
+                modalTitleError: "Oops!",
+                modalTitleSuccess: "Thanks for your feedback!",
+                screenshotButtonTooltipText: "Take a Screenshot",
+                screenshotTopbarText: "SELECT AN ELEMENT ON THE PAGE",
+                sendButtonText: "Send",
+                ratingPlaceholder: "Was this page helpful?",
+                ratingStarsPlaceholder: "How would you rate this page"
+            },
+            es: {
+                feedbackButtonText: "Sugerencias",
+                emailPlaceholder: "Ingrese su correo electrónico",
+                errorMessage: "Inténtalo de nuevo más tarde.",
+                modalTitleError403: "La URL de solicitud no coincide con la definida en PushFeedback para este proyecto.",
+                modalTitleError404: "No pudimos encontrar el ID del proyecto proporcionado en PushFeedback.",
+                messagePlaceholder: "Comentarios",
+                modalTitle: "Danos tu opinión",
+                modalTitleError: "¡Vaya!",
+                modalTitleSuccess: "¡Gracias por tus comentarios!",
+                screenshotButtonTooltipText: "Tomar una captura de pantalla",
+                screenshotTopbarText: "SELECCIONA UN ELEMENTO EN LA PÁGINA",
+                sendButtonText: "Enviar",
+                ratingPlaceholder: "¿Fue útil esta página?",
+                ratingStarsPlaceholder: "¿Cómo calificarías esta página?"
+            }
+        };
+
+        useEffect(() => {
+            if (typeof window !== 'undefined') {
+                defineCustomElements(window);
+            }
+        }, []);
+
+        const {
+            feedbackButtonText,
+            emailPlaceholder,
+            errorMessage,
+            modalTitleError403,
+            modalTitleError404,
+            messagePlaceholder,
+            modalTitle,
+            modalTitleError,
+            modalTitleSuccess,
+            screenshotButtonTooltipText,
+            screenshotTopbarText,
+            sendButtonText,
+            ratingPlaceholder,
+            ratingStarsPlaceholder
+        } = placeholders[language] || placeholders.en;
+
+        return (
+            <div className="feedback-widget">
+                <FeedbackButton
+                    project={projectId}
+                    email-placeholder={emailPlaceholder}
+                    error-message={errorMessage}
+                    modal-title-error-4-0-3={modalTitleError403}
+                    modal-title-error-4-0-4={modalTitleError404}
+                    message-placeholder={messagePlaceholder}
+                    modal-title={modalTitle}
+                    modal-title-error={modalTitleError}
+                    modal-title-success={modalTitleSuccess}
+                    screenshot-button-tooltip-text={screenshotButtonTooltipText}
+                    screenshot-topbar-text={screenshotTopbarText}
+                    send-button-text={sendButtonText}
+                    rating-placeholder={ratingPlaceholder}
+                    rating-stars-placeholder={ratingStarsPlaceholder}
+                    button-position="bottom-right"
+                    button-style="dark"
+                    modal-position="bottom-right"
+                >
+                {feedbackButtonText}
+                </FeedbackButton>
+            </div>
+        );
+    }
+
+    export default function FooterWrapper(props) {
+        return (
+            <>
+                <Footer {...props} />
+                <FeedbackWidget />
+            </>
+        );
+    }
+    ```
+
+    Replace `<PROJECT_ID>` with your project's ID from the [PushFeedback dashboard](../quickstart.md#2-create-a-project) and the placeholder strings with your project's supported languages.
 
 1. Start your Docusaurus project by running `npm start` or `yarn start` in your terminal. Once it compiles successfully, verify that the feedback button appears and functions correctly on your site.
