@@ -21,7 +21,7 @@ Follow the steps below to configure an URL for your project:
 
 7. Click **Save**
 
-## Additional URLS
+## Additional URLs
 
 :::info
 This feature is only available on the [Unlimited](https://pushfeedback.com/pricing) plan.
