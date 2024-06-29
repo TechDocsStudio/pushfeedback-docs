@@ -76,10 +76,12 @@ To integrate the PushFeedback widget into your Next.js site:
     return (
     <div className="App">
     {/* Other components and content */}
-    <DynamicFeedbackButton project="c2syqqm916" button-position="bottom-right" modal-position="bottom-right" button-style="light" custom-font="true">Feedback</DynamicFeedbackButton>
+    <DynamicFeedbackButton project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="light" custom-font="true">Feedback</DynamicFeedbackButton>
     </div>
     );
     ```
+
+    Replace `<YOUR_PROJECT_ID>` with your project's ID from the [PushFeedback dashboard](../quickstart.md#2-create-a-project).
 
 1. Start your Next.js app by running `npm start` or `yarn start` in your terminal. Once it compiles successfully, verify that the feedback button appears and functions correctly on your site.
 

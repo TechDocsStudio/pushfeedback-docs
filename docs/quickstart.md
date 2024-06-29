@@ -30,7 +30,7 @@ Follow these steps to initiate a new project:
 
     ![Create project](./images/create-project.gif)
 
-    1. **URL configuration:** Enter the URL where you plan to install the feedback widget. Remember, this should be a specific subdomain (e.g., docs.pushfeedback.com), not the primary domain.
+    1. **URL configuration:** Specify the URL where you intend to use the feedback widget. Ensure this URL corresponds to the exact domain or subdomain where the widget will be used. For example, in our case we use `docs.pushfeedback.com` instead of `pushfeedback.com`.
     2.  **Email notification setup (optional):** You have the option to define up to three email addresses that will receive notifications. This step is optional, but if you want immediate alerts for feedback, it's beneficial.
     3. **Get your code snippet**: The final step of the wizard will present a pre-populated code snippet tailored to your project. This code contains your unique Project ID and is ready for integration with your website.
 
