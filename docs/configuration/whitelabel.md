@@ -5,7 +5,7 @@ sidebar_position: 5
 # Whitelabel
 
 :::info
-This feature is only available on the [Professional](https://pushfeedback.com/pricing) and [Unlimited](https://pushfeedback.com/pricing) plans.
+This feature is only available on the [Professional](https://pushfeedback.com#pricing) and [Unlimited](https://pushfeedback.com#pricing) plans.
 :::
 
 PushFeedback offers a white labeling option which allows you to hide the PushFeedback logo from the bottom of the feedback widget, ensuring a seamless experience for your users.

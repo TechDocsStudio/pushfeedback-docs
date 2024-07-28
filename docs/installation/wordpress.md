@@ -48,4 +48,4 @@ To embed the PushFeedback widget into your WordPress site:
 
 For more about customization and additional features exploration, check out the [Configuration](/category/configuration) section.
 
-Need assistance? We're here to help! Reach out to us at [PushFeedback Support](https://pushfeedback.com/support).
+Need assistance? We're here to help! Reach out to us at [PushFeedback Support](https://pushfeedback.com/contact).
