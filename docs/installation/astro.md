@@ -1,12 +1,12 @@
 ---
-sidebar_label: HTML
+sidebar_label: Astro
 ---
 
-# Feedback widget for HTML sites
+# Feedback widget for Astro
 
-Here's a step-by-step guide to help you install PushFeedback in your HTML site.
+Here's a step-by-step guide to help you install PushFeedback in your Astro project.
 
-![Feedback wiget for docs screenshot](./images/feedback-widget-docs.png)
+![Feedback widget for docs screenshot](./images/feedback-widget-astro.png)
 
 ## Prerequisites
 
@@ -14,12 +14,15 @@ Before you begin, you'll need to have the following:
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
+- An Astro project.
 
 ## Installation
 
-To integrate the PushFeedback widget into your website:
+To integrate the PushFeedback widget into your Astro site:
 
-1. Insert the following code within the `<head>` section of your site's HTML:
+1. Open your Astro project in your preferred code editor.
+
+1. Locate the `src/layouts/Layout.astro` file (or any layout file that wraps your pages) and insert the following code within the `<head>` section:
 
     ```html
     <!-- Initialize the PushFeedback widget -->
@@ -27,7 +30,7 @@ To integrate the PushFeedback widget into your website:
     <script type="module" src="https://cdn.jsdelivr.net/npm/pushfeedback/dist/pushfeedback/pushfeedback.esm.js"></script>
     ```
 
-1. Just before the closing `</body>` tag of your website's HTML, add the following snippet:
+1. Just before the closing `</body>` tag of your layout file, add the following snippet:
 
     ```html
     <feedback-button project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="light">Feedback</feedback-button>

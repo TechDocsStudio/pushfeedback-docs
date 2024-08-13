@@ -24,7 +24,7 @@ Follow the steps below to configure an URL for your project:
 ## Additional URLs
 
 :::info
-This feature is only available on the [Unlimited](https://pushfeedback.com/pricing) plan.
+This feature is only available on the [Unlimited](https://pushfeedback.com#pricing) plan.
 :::
 
 If you need to add more than one URL, such as for different services like staging, development, and production, but want to use the same integration without creating separate projects, you can list new URLs in the PushFeedback dashboard.

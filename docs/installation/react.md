@@ -72,4 +72,4 @@ Before you begin, you'll need to have the following:
 
 For more about customization and additional features exploration, check out the [Configuration](/category/configuration) section.
 
-Need assistance? We're here to help! Reach out to us at [PushFeedback Support](https://pushfeedback.com/support).
+Need assistance? We're here to help! Reach out to us at [PushFeedback Support](https://pushfeedback.com/contact).
