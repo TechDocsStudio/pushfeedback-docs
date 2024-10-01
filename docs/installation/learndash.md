@@ -150,4 +150,4 @@ To embed the PushFeedback widget at the end of every LearnDash lesson, quiz, or 
 
 ## Next steps
 
-For more about customization and additional features exploration, check out the [Configuration](/category/configuration) section.
+For more about customization and additional features exploration, check out the [Customization](/category/customization) section.

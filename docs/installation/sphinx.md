@@ -61,7 +61,7 @@ To integrate the PushFeedback widget into your Sphinx site:
 
 You can customize the PushFeedback widget to suit your needs. For example, you can change the widget's position, color, and more.
 
-To do so, you can add any of the following [configuration](../configuration/layout.mdx)  options to your `conf.py` file, with the following modifications:
+To do so, you can add any of the following [configuration](../customization/layout.mdx)  options to your `conf.py` file, with the following modifications:
 
 1. Prefix configuration options with `pushfeedback_`. For instance, `project` would be `pushfeedback_project`.
 

@@ -39,6 +39,6 @@ To integrate the PushFeedback widget into your website:
 
 ## Next steps
 
-For more about customization and additional features exploration, check out the [Configuration](/category/configuration) section.
+For more about customization and additional features exploration, check out the [Customization](/category/customization) section.
 
 Need assistance? We're here to help! Reach out to us at [PushFeedback Support](https://pushfeedback.com/contact).

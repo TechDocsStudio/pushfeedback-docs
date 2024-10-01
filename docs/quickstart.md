@@ -70,7 +70,7 @@ Get the PushFeedback widget to blend with your website's design and functionalit
 
 * **Text:** Adapt the widget's text to mirror your site's tone or language.
 
-For detailed configuration steps, see our [Configuration](/category/configuration) documentation.
+For detailed configuration steps, see our [Customization](/category/customization) documentation.
 
 ## Next steps
 
