@@ -76,7 +76,7 @@ To integrate the PushFeedback widget into your Next.js site:
     return (
     <div className="App">
     {/* Other components and content */}
-    <DynamicFeedbackButton project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="light" custom-font="true">Feedback</DynamicFeedbackButton>
+    <DynamicFeedbackButton project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="dark" custom-font="true">Feedback</DynamicFeedbackButton>
     </div>
     );
     ```

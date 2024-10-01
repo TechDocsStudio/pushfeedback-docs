@@ -6,6 +6,8 @@ sidebar_label: Make
 
 Make.com is a versatile automation platform that enables you to connect your apps and automate workflows, streamlining repetitive tasks without needing to code. With PushFeedback, you can integrate effortlessly with Make.com to design a wide range of automation workflows.
 
+![Webhooks integration](./images/webhook-integration.png)
+
 ## Prerequisites
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).
@@ -38,7 +40,7 @@ To activate the webhook integration in PushFeedback, follow the steps outlined b
 
 See [Webhook specification](./webhooks.md#webhook-specification).
 
-## Integrations and Examples
+## Sample integrations
 
 Make.com offers hundreds of integrations with popular apps and services, allowing you to create custom workflows tailored to your needs. Some examples of integrations you can achieve with PushFeedback and Make include:
 

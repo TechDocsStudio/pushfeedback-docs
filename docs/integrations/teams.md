@@ -4,8 +4,10 @@ sidebar_label: Teams
 
 # Teams integration
 
-Using PushFeedback, you can forward user feedback directly to your preferred Teams channel using [incoming webhooks](https://api.slack.com/messaging/webhooks).
+Using PushFeedback, you can forward user feedback directly to your preferred Microsoft Teams channel using [incoming webhooks](https://api.slack.com/messaging/webhooks).
 This ensures that the right team members are immediately informed, leading to faster responses and a better user experience.
+
+![Teams integration](./images/teams-integration.png)
 
 ## Prerequisites
 

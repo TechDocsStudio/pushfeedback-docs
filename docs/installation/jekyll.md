@@ -39,7 +39,7 @@ To integrate the PushFeedback widget into your Jekyll site:
 1. Open `_includes/footer.html` or the specific file where you'd like the feedback button to appear. Add the following snippet just before its closing tags:
 
     ```html
-    <feedback-button project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="light">Feedback</feedback-button>
+    <feedback-button project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="dark">Feedback</feedback-button>
     ```
 
     Replace `<YOUR_PROJECT_ID>` with your project's ID from the [PushFeedback dashboard](../quickstart.md#2-create-a-project).

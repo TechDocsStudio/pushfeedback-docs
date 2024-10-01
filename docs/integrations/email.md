@@ -6,6 +6,8 @@ sidebar_label: Email
 
 Using PushFeedback, you can forward user feedback directly to specific email addresses. This ensures that the right team members are immediately informed, leading to faster responses and a better user experience.
 
+![Email integration](./images/email-integration.png)
+
 ## Prerequisites
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).

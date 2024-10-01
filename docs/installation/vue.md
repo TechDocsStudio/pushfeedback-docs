@@ -57,7 +57,7 @@ To integrate the PushFeedback widget into your Vue.js site:
             project="<YOUR_PROJECT_ID>" 
             button-position="bottom-right" 
             modal-position="bottom-right" 
-            button-style="light">
+            button-style="dark">
             Feedback
         </feedback-button>
     </template>

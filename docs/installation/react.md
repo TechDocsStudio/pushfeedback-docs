@@ -56,7 +56,7 @@ Before you begin, you'll need to have the following:
         return (
             <div className="App">
                 {/* Other components and content */}
-                <FeedbackButton project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="light">Feedback</FeedbackButton>
+                <FeedbackButton project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="dark">Feedback</FeedbackButton>
             </div>
         );
     }

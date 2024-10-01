@@ -45,7 +45,7 @@ To integrate the PushFeedback widget into your MkDocs site:
     {{ super() }}
 
     <!-- Feedback button -->
-    <feedback-button project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="light">Feedback</feedback-button>
+    <feedback-button project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="dark">Feedback</feedback-button>
     {% endblock %}
     ```
 

@@ -16,7 +16,7 @@ Before you begin, you'll need to have the following:
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
 - An Antora project.
 
-## Installation
+## Basic installation
 
 To integrate the PushFeedback widget into your Antora site:
 
@@ -40,7 +40,7 @@ To integrate the PushFeedback widget into your Antora site:
 1. Locate the `footer.hbs` or the specific file where you'd like the feedback button to appear. Just before the closing tags in that file, add the following snippet:
 
     ```html
-    <feedback-button project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="light">Feedback</feedback-button>
+    <feedback-button project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="dark">Feedback</feedback-button>
     ```
 
     Replace `<YOUR_PROJECT_ID>` with your project's ID from the [PushFeedback dashboard](../quickstart.md#2-create-a-project).

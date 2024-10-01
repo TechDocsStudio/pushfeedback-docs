@@ -4,8 +4,10 @@ sidebar_label: Webhook
 
 # Incoming Webhooks integration
 
-Webhooks are a powerful way to send real-time data from one application to another. With PushFeedback, you can utilize webhooks to submit user feedback to any URL of your choice once it gets created. This allows you to integrate PushFeedback seamlessly with your existing workflows and systems.
+Webhooks are a powerful way to send real-time data from one application to another. With PushFeedback, you can utilize webhooks to submit user feedback to any URL of your choice once it gets created. This allows you to integrate PushFeedback with your existing workflows and systems.
 
+
+![Webhooks integration](./images/webhook-integration.png)
 
 ## Prerequisites
 
@@ -33,7 +35,6 @@ To activate the webhook integration in PushFeedback and start forwarding user fe
 8. Save your changes by clicking **Save**.
 
 9. To ensure the integration is working correctly, go to any webpage where you've implemented the PushFeedback widget and send a feedback entry. The data should be successfully forwarded to the specified endpoint.
-
 
 ## Webhook specification
 

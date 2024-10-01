@@ -7,6 +7,8 @@ sidebar_label: Slack
 Using PushFeedback, you can forward user feedback directly to your preferred Slack channel using [incoming webhooks](https://api.slack.com/messaging/webhooks).
 This ensures that the right team members are immediately informed, leading to faster responses and a better user experience.
 
+![Slack integration](./images/slack-integration.png)
+
 ## Prerequisites
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).

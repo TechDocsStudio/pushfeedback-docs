@@ -4,7 +4,9 @@ sidebar_label: Zapier
 
 # Zapier integration
 
-Zapier is a powerful automation tool that connects your favorite apps and services, allowing you to automate repetitive tasks without any coding knowledge. With PushFeedback, you can integrate seamlessly with Zapier to create a multitude of automation workflows. 
+Zapier is a powerful automation tool that connects your favorite apps and services, allowing you to automate repetitive tasks without any coding knowledge. With PushFeedback, you can integrate with Zapier to create a multitude of automation workflows. 
+
+![Webhooks integration](./images/webhook-integration.png)
 
 ## Prerequisites
 
@@ -38,7 +40,7 @@ To activate the webhook integration in PushFeedback, follow the steps outlined b
 
 See [Webhook specification](./webhooks.md#webhook-specification).
 
-## Integrations and Examples
+## Sample integrations
 
 Zapier offers hundreds of integrations with popular apps and services, allowing you to create custom workflows tailored to your needs. Some examples of integrations you can achieve with PushFeedback and Zapier include:
 
