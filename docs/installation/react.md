@@ -6,7 +6,7 @@ sidebar_label: React
 
 Here's a step-by-step guide to help you install PushFeedback in your React project using NPM.
 
-![Feedback wiget for docs screenshot](./images/feedback-widget-docs.png)
+![Feedback widget for docs screenshot](./images/feedback-widget-starlight.png)
 
 ## Prerequisites
 

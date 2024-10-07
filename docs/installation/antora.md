@@ -6,7 +6,7 @@ sidebar_label: Antora
 
 Here's a step-by-step guide to help you install PushFeedback in your Antora project.
 
-![Feedback wiget for docs screenshot](./images/feedback-widget-docs.png)
+![Feedback widget for docs screenshot](./images/feedback-widget-starlight.png)
 
 ## Prerequisites
 

@@ -104,9 +104,26 @@ const config = {
     }),
     scripts: [
       'https://www.googletagmanager.com/gtag/js?id=G-1TMTNMCLSX',
-      '/analytics.js'
+      '/analytics.js',
     ],
-  
+    headTags: [
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'stylesheet',
+          href: 'https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.css',
+        },
+      },
+      {
+        tagName: 'script',
+        attributes: {
+          type: 'module',
+          src: 'https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.esm.js',
+        },
+      },
+    ],
   };
+
+
 
 module.exports = config;

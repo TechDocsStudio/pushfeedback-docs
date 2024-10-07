@@ -23,7 +23,7 @@ With your account ready, move on to creating your first project.
 ## 2. Create a project
 
 <div style={{ position: 'relative', paddingTop: '66.42%' }}>
-<iframe src="https://player.vimeo.com/video/1014981817?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></iframe></div>
+<iframe src="https://player.vimeo.com/video/1014981817?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></iframe></div>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
 To create your first project, follow these steps:
@@ -58,7 +58,11 @@ To integrate the PushFeedback widget into your website:
     <feedback-button project="<YOUR_PROJECT_ID>" button-position="bottom-right" modal-position="bottom-right" button-style="dark">Feedback</feedback-button>
     ```
 
-Replace `<YOUR_PROJECT_ID>` with your project's ID you obtained from the previous step.
+    Replace `<YOUR_PROJECT_ID>` with your project's ID you obtained from the previous step.
+
+1. You should see the widget installed in your site:
+
+    ![Feedback widget](./images/feedback-widget-astro.png)
 
 ## 4. Customize the widget
 

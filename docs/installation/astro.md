@@ -10,7 +10,7 @@ Here's a step-by-step guide to help you install PushFeedback in your Astro proje
 If you're using **Starlight**, the documentation framework built on Astro, refer to [Feedback widget for Starlight](starlight.md).
 :::
 
-![Feedback widget for docs screenshot](./images/feedback-widget-astro.png)
+![Feedback widget for docs screenshot](./images/feedback-widget-starlight.png)
 
 
 ## Prerequisites

@@ -6,7 +6,7 @@ sidebar_label: Sphinx
 
 Here's a step-by-step guide to help you install PushFeedback in your Sphinx project.
 
-![Feedback wiget for docs screenshot](./images/feedback-widget-docs.png)
+![Feedback widget for docs screenshot](./images/feedback-widget-starlight.png)
 
 ## Prerequisites
 
@@ -54,8 +54,6 @@ To integrate the PushFeedback widget into your Sphinx site:
     ```
 
     Once built, open your documentation in a web browser. Verify that the feedback button appears and works correctly on your site.
-
-    ![Sphinx Feedback widget](./images/sphinx.png)
 
 ## Next steps
 
