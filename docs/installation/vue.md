@@ -16,7 +16,6 @@ Before you begin, you'll need to have the following:
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
 - A Vue.js project and Node.js installed.
 
-
 ## Installation
 
 To integrate the PushFeedback widget into your Vue.js site:
