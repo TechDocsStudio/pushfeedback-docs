@@ -87,7 +87,7 @@ To activate the Jira integration in PushFeedback, follow these steps:
 
 To ensure the integration is working correctly, follow these steps:
 
-1. Go to any webpage where you’ve implemented the PushFeedback widget and submit a feedback entry.
+1. Go to any webpage where you’ve implemented the feedback widget and submit a feedback entry.
 2. Confirm the feedback appears on your specified Jira board as a new issue:
 
     ![Jira board](./images/jira-board.png)
