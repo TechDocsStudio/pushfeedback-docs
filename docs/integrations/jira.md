@@ -2,7 +2,7 @@
 sidebar_label: Jira
 ---
 
-# Jira integration (beta)
+# Jira integration
 
 With PushFeedback, you can forward user feedback directly to your preferred Jira board using [Jira Cloud Automation](https://support.atlassian.com/cloud-automation/docs/jira-cloud-automation/) or [Jira Data Center Automations](https://confluence.atlassian.com/automation/), depending on your distribution.
 
