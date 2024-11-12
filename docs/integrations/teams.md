@@ -17,7 +17,7 @@ This ensures that the right team members are immediately informed, leading to fa
 
 ## Steps
 
-To activate the Slack integration in PushFeedback, follow the steps outlined below:
+To activate the Teams integration in PushFeedback, follow the steps outlined below:
 
 1. Open [app.pushfeedback.com](https://app.pushfeedback.com).
 
@@ -31,7 +31,7 @@ To activate the Slack integration in PushFeedback, follow the steps outlined bel
 
 6. Under **Integrations**, select **Teams**.
 
-7. Add the incoming webhook URL provided by Teams. For detailed instructions on setting up incoming webhooks in Slack, refer to [Microsoft's documentation](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet).
+7. Add the incoming webhook URL provided by Teams. For detailed instructions on setting up incoming webhooks in Teams, refer to [Microsoft's documentation](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet).
 
 8. Save your changes by clicking **Save**.
 
