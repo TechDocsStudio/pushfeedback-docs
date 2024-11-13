@@ -1,0 +1,128 @@
+---
+sidebar_position: 5
+---
+
+# Events
+
+This guide explains how to listen for events emitted by the feedback widget and handle them with JavaScript.
+
+## Events overview
+
+The feedback widget emits the following events:
+
+- **`feedbackSent`**: Emitted when feedback is successfully submitted.
+- **`feedbackError`**: Emitted if there is an error during feedback submission.
+
+By listening to these events, you can handle feedback dynamically, such as storing it in your database or performing any custom actions.
+
+## How to listen for events
+
+You can listen for `feedbackSent` and `feedbackError` events globally by attaching event listeners directly to the `document` object.
+This approach captures events emitted anywhere in the DOM, making it convenient to handle feedback without needing direct access to the feedback widget.
+
+Here’s how you can add event listeners to capture these events:
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="JavaScript" label="JavaScript" default>
+
+  ```javascript
+  document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('feedbackSent', (event) => {
+      const feedback = event.detail.feedback;
+      console.log('Feedback submitted:', feedback);
+
+      // Example custom action: store feedback in your database
+      storeFeedbackInDatabase(feedback);
+    });
+
+    document.addEventListener('feedbackError', (event) => {
+      const error = event.detail.error;
+      console.error('Feedback submission error:', error);
+
+      // Example custom action: show error message to the user
+      showErrorToUser(error.message);
+    });
+  });
+  ```
+
+  </TabItem>
+  <TabItem value="React" label="React">
+
+  ```ts
+  import React, { useEffect } from 'react';
+
+  const FeedbackListener = () => {
+    useEffect(() => {
+      // Define the handler for feedbackSent
+      const handleFeedbackSent = (event) => {
+        const feedback = event.detail.feedback;
+        console.log('Feedback submitted:', feedback);
+
+        // Example custom action: store feedback in your database
+        storeFeedbackInDatabase(feedback);
+      };
+
+      // Define the handler for feedbackError
+      const handleFeedbackError = (event) => {
+        const error = event.detail.error;
+        console.error('Feedback submission error:', error);
+
+        // Example custom action: show error message to the user
+        showErrorToUser(error.message);
+      };
+
+      // Add event listeners
+      document.addEventListener('feedbackSent', handleFeedbackSent);
+      document.addEventListener('feedbackError', handleFeedbackError);
+
+      // Cleanup event listeners on unmount
+      return () => {
+        document.removeEventListener('feedbackSent', handleFeedbackSent);
+        document.removeEventListener('feedbackError', handleFeedbackError);
+      };
+    }, []); // Empty dependency array means this effect runs only on mount and unmount
+
+    return <div>Listening for feedback events...</div>;
+  };
+
+  export default FeedbackListener;
+  ```
+
+  </TabItem>
+</Tabs>
+
+## Feedback event object format
+
+The `feedbackSent` event includes a `detail` object with the following structure:
+
+```json
+{
+  feedback: {
+    id: string;               // Unique ID for the feedback returned from the API
+    url: string;              // The URL where the feedback was submitted
+    message: string;          // Feedback message provided by the user
+    email: string;            // User's email address
+    project: string;          // Project identifier
+    screenshot: string;       // Base64-encoded screenshot, if available
+    rating: number;           // User's rating, if provided
+    ratingMode: string;       // Rating mode selected by the user
+    verification: string;     // Verification information
+    session: string;          // Session ID from localStorage
+  };
+}
+```
+
+The feedbackError event also includes a detail object with the following structure:
+
+```json
+{
+  error: {
+    status: number;           // HTTP status code returned by the server or 500 for general errors
+    message: string;          // Detailed error message returned from the server or error object for general errors
+  };
+}
+```
+
