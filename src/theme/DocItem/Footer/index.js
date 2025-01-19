@@ -35,14 +35,7 @@ function FeedbackWidget() {
 export default function FooterWrapper(props) {
   return (
     <>
-    <biel-button 
-        project="jfvzioa17q"
-        header-title="PushFeedback chatbot"
-        button-position="bottom-right"
-        modal-position="bottom-right"
-        button-style="dark">
-        Ask AI
-      </biel-button>
+    
       <FeedbackWidget/>
       <Footer {...props} />
     </>

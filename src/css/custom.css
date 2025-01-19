@@ -17,6 +17,7 @@
   --ifm-color-primary-lighter: #1a83ff;
   --ifm-color-primary-lightest: #3e97ff;
   --ifm-code-font-size: 95%;
+  --ifm-logo-background-color: #fff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-menu-color-background-active: #f3f4f6;
   --ifm-z-index-fixed: 100;
@@ -25,13 +26,14 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #4fd1c5;
-  --ifm-color-primary-dark: #38cbbd;
-  --ifm-color-primary-darker: #33c2b5;
-  --ifm-color-primary-darkest: #2aa095;
-  --ifm-color-primary-light: #66d7cd;
-  --ifm-color-primary-lighter: #71dad0;
-  --ifm-color-primary-lightest: #93e3dc;
+  --ifm-color-primary-dark: #0065dc;
+  --ifm-color-primary-darker: #005fcf;
+  --ifm-color-primary-darkest: #004eab;
+  --ifm-color-primary-light: #0d7cff;
+  --ifm-color-primary-lighter: #1a83ff;
+  --ifm-color-primary-lightest: #3e97ff;
+  --ifm-logo-background-color: #ffffff0d;
+  --ifm-menu-color-background-active: #ffffff0d;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -41,7 +43,7 @@
 
 .navbar__logo {
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--ifm-logo-background-color);
   border: 0 solid rgb(229, 231, 235);
   border-radius: 4px;
   box-shadow: rgba(9, 9, 11, 0.2) 0px 1px 2px 0px;

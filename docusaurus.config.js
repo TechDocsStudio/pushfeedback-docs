@@ -56,13 +56,12 @@ const config = {
     ],
   ],
   plugins: [
-    require.resolve('docusaurus-lunr-search'),
     [
       'docusaurus-pushfeedback',{
         project: 'wlkz1eomrs',
         buttonStyle: 'dark',
-        buttonPosition: 'center-right',
-        modalPosition: 'sidebar-right',
+        buttonPosition: 'bottom-right',
+        modalPosition: 'bottom-right',
         successMessage: "Your input helps us improve every day."
       }
     ],
@@ -81,8 +80,8 @@ const config = {
       },
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: true,
-        respectPrefersColorScheme: false,
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },    
       footer: {
         style: 'dark',
