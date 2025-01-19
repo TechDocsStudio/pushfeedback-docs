@@ -15,14 +15,14 @@ function FeedbackWidget() {
               <b>Was this helpful?</b>
           </div>
           <span className="feedback-widget-positive">
-              <feedback-button project={projectId} rating="1" custom-font="True" button-style="default" modal-position="center">
+              <feedback-button project={projectId} rating="1" custom-font="True" button-style="default" modal-position="center" success-message="Your input helps us improve every day.">
                 <button className="button button--outline button--primary button--sm" title="Yes">
                     {buttonThumbsUp}
                 </button>
               </feedback-button>
           </span>
           <span className="feedback-widget-negative margin-left--sm">
-              <feedback-button project={projectId} rating="0" custom-font="True" button-style="default" modal-position="center">
+              <feedback-button project={projectId} rating="0" custom-font="True" button-style="default" modal-position="center" success-message="Your input helps us improve every day.">
                 <button className="button button--outline button--primary button--sm" title="No">
                     {buttonThumbsDown}
                 </button>

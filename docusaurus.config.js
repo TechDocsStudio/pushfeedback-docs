@@ -62,7 +62,8 @@ const config = {
         project: 'wlkz1eomrs',
         buttonStyle: 'dark',
         buttonPosition: 'center-right',
-        modalPosition: 'sidebar-right'
+        modalPosition: 'sidebar-right',
+        successMessage: "Your input helps us improve every day."
       }
     ],
     'docusaurus-plugin-image-zoom',
