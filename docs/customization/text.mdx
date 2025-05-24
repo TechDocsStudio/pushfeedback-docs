@@ -9,7 +9,7 @@ By customizing these properties, you can ensure a consistent user experience tha
 
 ## Usage
 
-To customize the textual properties, set the respective attributes on the `<feedback-button>` element in your HTML. Here's an illustrative example:
+To customize the textual properties, set the respective attributes on the `<feedback-button>` element in your HTML. Here's an example:
 
 ```html
 <feedback-button 
@@ -26,20 +26,21 @@ The table below lists all the available properties you can override:
 
 | Property                       | Description                                                                                                                     |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| `email-placeholder`            | **Type**: `string`<br />**Default value**: `Email address (optional)`<br />Placeholder text for the email input field.<br /><br />    |
 | `error-message`                | **Type**: `string`<br />**Default value**: `Please try again later."`<br />Message displayed when there's an error submitting feedback.<br /><br />|
 | `modal-title-error-4-0-3`      | **Type**: `string`<br />**Default value**: `The request URL does not match the one defined in PushFeedback for this project."`<br />Message displayed when there's a 403 error submitting feedback.<br /><br />|
 | `modal-title-error-4-0-4`      | **Type**: `string`<br />**Default value**: `We could not find the provided project id in PushFeedback.`<br />Message displayed when there's a 404 error submitting feedback.<br /><br />|
+| `email-placeholder`            | **Type**: `string`<br />**Default value**: `Email address (optional)`<br />Placeholder text for the email input field.<br /><br />    |
+| `footer-text`                  | **Type**: `string`<br />**Default**: `""`<br /><br />Optional footer text displayed after "Powered by Pushfeedback.com". |
 | `message-placeholder`          | **Type**: `string`<br />**Default value**: `Comments`<br />Placeholder for the feedback message input.<br /><br />|
 | `modal-title`                  | **Type**: `string`<br />**Default value**: `Share your feedback`<br />Title of the feedback modal.<br /><br />                        |
 | `modal-title-error`            | **Type**: `string`<br />**Default value**: `Oops!`<br />Title displayed when there's an error submitting feedback.<br /><br />|
 | `modal-title-success`          | **Type**: `string`<br />**Default value**: `Thanks for your feedback!`<br />Title displayed upon successful feedback submission.<br /><br />|
+| `privacy-policy-text`  | **Type**: `boolean`<br />**Default value**: `I have read and expressly consent to the terms of the <a href='https://pushfeedback.com/privacy'>Privacy Policy</a>.`<br /><br />Privacy policy text. |
+| `rating-placeholder`           | **Type**: `string`<br />**Default value**: `Was this page helpful?`<br />Heading for the feedback rating feature (thumbs).<br /><br />|
+| `rating-stars-placeholder`     | **Type**: `string`<br />**Default value**: `How would you rate this page`<br />Heading for the feedback rating feature (stars).<br /><br />|
 | `screenshot-button-text`       | **Type**: `string`<br />**Default value**: `Take a Screenshot`<br />Tooltip text for the screenshot button.<br /><br />              |
 | `screenshot-topbar-text`       | **Type**: `string`<br />**Default value**: `SELECT AN ELEMENT ON THE PAGE`<br />Instructional text when taking a screenshot.<br /><br />|
 | `send-button-text`             | **Type**: `string`<br />**Default value**: `Send`<br />Text for the button that submits feedback.<br /><br />                         |
-| `rating-placeholder`           | **Type**: `string`<br />**Default value**: `Was this page helpful?`<br />Heading for the feedback rating feature (thumbs).<br /><br />|
-| `rating-stars-placeholder`     | **Type**: `string`<br />**Default value**: `How would you rate this page`<br />Heading for the feedback rating feature (stars).<br /><br />|
-| `footer-text`                  | **Type**: `string`<br />**Default**: `""`<br /><br />Optional footer text displayed after "Powered by Pushfeedback.com". |
 
 ## Example
 

@@ -1,5 +1,6 @@
 ---
-sidebar_label: HTML
+sidebar_label: Basic installation
+sidebar_position: 1
 ---
 
 # Feedback widget for HTML sites
