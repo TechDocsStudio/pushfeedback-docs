@@ -43,6 +43,7 @@ To integrate the PushFeedback widget into your Sphinx site:
 
     ```python
     pushfeedback_project = '<YOUR_PROJECT_ID>'
+    pushfeedback_feedback_button_text = "Feedback"
     ```
 
     Replace `<YOUR_PROJECT_ID>` with your project's ID from the [PushFeedback dashboard](../quickstart.md#2-create-a-project).

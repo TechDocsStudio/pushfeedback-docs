@@ -79,6 +79,11 @@
   border-radius: 8px;
 }
 
+
+article a:not(.card) {
+  font-weight: bold;
+}
+
 @media (min-width: 997px){
 
   .navbar__inner {
@@ -96,11 +101,6 @@
     padding-top: 0px !important;
   }
   
-  .main-wrapper article:not(.col),
-  .main-wrapper header {
-    padding: 0 10%;
-  }
-
   .breadcrumbs {
     display: none;
   }
@@ -112,4 +112,8 @@
         background-color: initial;
     }
   }  
+}
+
+.navbar__items--right > :last-child {
+  padding-top: 0px;
 }
