@@ -53,6 +53,7 @@ Here's an example of a webhook payload that PushFeedback sends to the specified 
     "id": "feedback123",
     "project_id": "https://app.pushfeedback.com/team1/projects/project1/",
     "message": "This is a sample feedback message.",
+    "metadata": "Feature A",
     "url": "https://example.com/page",
     "rating": 4,
     "rating_mode": "star",
