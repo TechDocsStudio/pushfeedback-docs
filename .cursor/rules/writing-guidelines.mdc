@@ -1,0 +1,10 @@
+---
+description:  Guidelines when writing documentation.
+globs:
+alwaysApply: false
+---
+
+
+- Follow Google Style guide when writting documentation.
+- Use parenthesis instead of em-dashes.
+- Write for developers, avoid marketing buzzwords and bluff.
