@@ -76,6 +76,7 @@ const config = {
         logo: {
           alt: 'PushFeedback',
           src: 'img/PushFeedback-Logo.png',
+          srcDark: 'img/PushFeedback-Logo-White.png',
         },
       },
       colorMode: {
