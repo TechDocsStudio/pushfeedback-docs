@@ -75,7 +75,7 @@ const config = {
       navbar: {
         logo: {
           alt: 'PushFeedback',
-          src: 'img/logo.png',
+          src: 'img/PushFeedback-Logo.png',
         },
       },
       colorMode: {
