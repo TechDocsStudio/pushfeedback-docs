@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpushfeedback=self.webpackChunkpushfeedback||[]).push([[6428],{1122:t=>{t.exports=JSON.parse('{"title":"Customization","slug":"/category/customization","permalink":"/category/customization","navigation":{"previous":{"title":"LearnDash","permalink":"/installation/learndash"},"next":{"title":"Layout","permalink":"/customization/layout"}}}')}}]);

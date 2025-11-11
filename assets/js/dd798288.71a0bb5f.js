@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpushfeedback=self.webpackChunkpushfeedback||[]).push([[4949],{1018:i=>{i.exports=JSON.parse('{"title":"Administration","slug":"/category/administration","permalink":"/category/administration","navigation":{"previous":{"title":"Zapier","permalink":"/integrations/zapier"},"next":{"title":"Configure URLs","permalink":"/administration/urls"}}}')}}]);
