@@ -32,10 +32,10 @@ To create your first project, follow these steps:
 2. Click the **Create project** button.
 3. Step through the wizard, providing details about your project as prompted:
 
-    1. **URL configuration:** Specify the URL where you intend to use the feedback widget. This URL must corresponds to the exact domain or subdomain where the widget will be used. For example, in our case we use `docs.pushfeedback.com` instead of `pushfeedback.com`.
-    2. **Email notification setup (optional):** You have the option to define up to three email addresses that will receive notifications.
-    3. **Get your code snippet**: The final step of the wizard shows your project code snippet, which contains your unique Project ID.
-    
+    * **URL configuration:** Specify the URL where you intend to use the feedback widget. This URL must corresponds to the exact domain or subdomain where the widget will be used. For example, in our case we use `docs.pushfeedback.com` instead of `pushfeedback.com`.
+    * **Email notification setup (optional):** You have the option to define up to three email addresses that will receive notifications.
+    * **Get your code snippet:** The final step of the wizard shows your project code snippet, which contains your unique Project ID.
+
 ## 3. Add the widget to your site
 
 To integrate the PushFeedback widget into your website:
