@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpushfeedback=self.webpackChunkpushfeedback||[]).push([[4720],{1547:e=>{e.exports=JSON.parse('{"title":"Security","slug":"/category/security","permalink":"/category/security","navigation":{"previous":{"title":"Manage subscription","permalink":"/administration/subscription"},"next":{"title":"Overview","permalink":"/security/overview"}}}')}}]);
