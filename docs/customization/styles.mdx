@@ -26,18 +26,33 @@ The tables below lists all the available properties you can override:
 
 ```css
 :root {
+    /* Base Colors */
+    --feedback-color-white: #ffffff;
+    --feedback-color-black: #191919;
+    --feedback-color-gray-100: #f1f3f4;
+    --feedback-color-gray-300: #d1d5db;
+    --feedback-color-gray-400: #9ca3af;
+    --feedback-color-gray-500: #999999;
+    --feedback-color-gray-600: #5f6368;
+    --feedback-color-gray-700: #363636;
+    --feedback-color-gray-800: #2a2a2a;
+    --feedback-color-blue-500: #3b82f6;
+    --feedback-color-blue-600: #0070F4;
+    --feedback-color-orange: #ffb422;
+    --feedback-color-light: #ccc;
+
     /* Colors */
-    --feedback-primary-color: #0070F4;
-    --feedback-secondary-color: #f1f3f4;
-    --feedback-light-color: #ccc;
-    --feedback-dark-color: #191919;
-    --feedback-text-color: #5f6368;
-    --feedback-white-color: #fff;
-    --feedback-highlight-color: #ffb422;
-        
+    --feedback-primary-color: var(--feedback-color-blue-600);
+    --feedback-secondary-color: var(--feedback-color-gray-100);
+    --feedback-light-color: var(--feedback-color-light);
+    --feedback-dark-color: var(--feedback-color-black);
+    --feedback-text-color: var(--feedback-color-gray-600);
+    --feedback-white-color: var(--feedback-color-white);
+    --feedback-highlight-color: var(--feedback-color-orange);
+       
     /* Fonts */
     --feedback-font-family: "Inter", "Tahoma", "sans-serif";
-    --feedback-heading-font-size: 16px;
+    --feedback-heading-font-size: 20px;
     --feedback-text-font-size: 14px;
 }
 ```
@@ -64,7 +79,6 @@ The tables below lists all the available properties you can override:
 
 ```css
 :root {
-
     --feedback-modal-button-bg-color: var(--feedback-white-color);
     --feedback-modal-button-bg-color-active: var(--feedback-white-color);
     --feedback-modal-button-border-color: var(--feedback-light-color);
@@ -99,9 +113,10 @@ The tables below lists all the available properties you can override:
     --feedback-modal-header-font-size: var(--feedback-heading-font-size);
     --feedback-modal-header-font-weight: 500;
     --feedback-modal-header-text-color: var(--feedback-dark-color);
-    --feedback-modal-input-bg-color: var(--feedback-secondary-color);
-    --feedback-modal-input-border-color: transparent;
-    --feedback-modal-input-border-color-focused: transparent;
+    --feedback-modal-input-bg-color: var(--feedback-color-white);
+    --feedback-modal-input-border-color: rgba(0, 0, 0, 0.12);
+    --feedback-modal-input-border-color-hover: rgba(0, 0, 0, 0.24);
+    --feedback-modal-input-border-color-focused: var(--feedback-primary-color);
     --feedback-modal-input-border-radius: 4px;
     --feedback-modal-input-font-size: var(--feedback-text-font-size);
     --feedback-modal-input-text-color: var(--feedback-text-color);
@@ -141,20 +156,23 @@ The tables below lists all the available properties you can override:
 
 ```css
 [data-theme='dark'] {
-    --feedback-text-color: #b0b8c4;
-    --feedback-light-color: #363636;
+    --feedback-text-color: var(--feedback-color-gray-400);
+    --feedback-light-color: var(--feedback-color-gray-700);
     --feedback-modal-button-bg-color-active: transparent;
-    --feedback-modal-button-icon-color: var(--feedback-white-color);
-    --feedback-modal-button-text-color: var(--feedback-white-color);
+    --feedback-modal-button-icon-color: var(--feedback-color-gray-300);
+    --feedback-modal-button-text-color: var(--feedback-color-gray-300);
     --feedback-modal-close-bg-color: transparent;
-    --feedback-modal-close-color: var(--feedback-white-color);
+    --feedback-modal-close-color: var(--feedback-color-gray-300);
     --feedback-modal-content-bg-color: var(--feedback-dark-color);
-    --feedback-modal-content-text-color: var(--feedback-text-color);
-    --feedback-modal-footer-link: var(--feedback-white-color);
+    --feedback-modal-content-text-color: var(--feedback-color-gray-400);
+    --feedback-modal-footer-link: var(--feedback-color-gray-400);
     --feedback-modal-header-text-color: var(--feedback-white-color);
-    --feedback-modal-input-bg-color: var(--feedback-light-color);
-    --feedback-modal-input-text-color: var(--feedback-white-color);
-    --feedback-modal-rating-button-color: var(--feedback-white-color);
+    --feedback-modal-input-bg-color: var(--feedback-color-gray-800);
+    --feedback-modal-input-border-color: rgba(255, 255, 255, 0.1);
+    --feedback-modal-input-border-color-hover: rgba(255, 255, 255, 0.2);
+    --feedback-modal-input-border-color-focused: var(--feedback-primary-color);
+    --feedback-modal-input-text-color: var(--feedback-color-gray-300);
+    --feedback-modal-rating-button-color: var(--feedback-color-gray-300);
     --feedback-modal-screenshot-close-color: var(--feedback-white-color);
     --feedback-modal-screenshot-header-bg-color: var(--feedback-dark-color);
     --feedback-modal-screenshot-header-text-color: var(--feedback-white-color);
