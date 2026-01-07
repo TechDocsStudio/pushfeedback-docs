@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpushfeedback=self.webpackChunkpushfeedback||[]).push([[1058],{7550:e=>{e.exports=JSON.parse('{"title":"Integrations","slug":"/category/integrations","permalink":"/category/integrations","navigation":{"previous":{"title":"Embedded mode","permalink":"/customization/embedded-mode"},"next":{"title":"Email","permalink":"/integrations/email"}}}')}}]);
