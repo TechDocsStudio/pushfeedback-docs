@@ -1,0 +1,33 @@
+---
+sidebar_position: 6
+---
+
+# Embedded mode
+
+Instead of using a button to trigger the feedback modal, you can embed the feedback form directly into your page. This works well for dedicated feedback pages or inline feedback sections within your content.
+
+## Usage
+
+To embed the feedback form, use the `<feedback-modal>` element with the `embedded` attribute set to `"true"`:
+
+```html
+<feedback-modal
+  project="YOUR_PROJECT_ID"
+  embedded="true">
+</feedback-modal>
+```
+
+## Properties
+
+The embedded form supports all modal-related properties from the [Layout](layout) documentation, including `modal-position`, `rating-mode`, `hide-email`, `hide-rating`, `hide-screenshot-button`, and text customization options.
+
+## Example
+
+<div>
+  <feedback-modal
+    project="wlkz1eomrs"
+    rating-mode="stars"
+    embedded="true">
+  </feedback-modal>
+</div>
+
