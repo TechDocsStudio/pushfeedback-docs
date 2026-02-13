@@ -5,16 +5,16 @@ sidebar_label: Overview
 
 # Security overview
 
-At PushFeedback, security is a core principle of our platform, designed to meet enterprise-level requirements with robust features that ensure data protection, compliance, and transparency.  
+At PushFeedback, security is a core principle of our platform, designed to meet enterprise-level requirements with robust features that ensure data protection, compliance, and transparency.
 
 This document details how we protect sensitive information, enforce security controls, and comply with industry standards.
 
 ## Security framework
 
-Our security approach is grounded in four key principles:  
+Our security approach is grounded in four key principles:
 
-1. **Confidentiality:** User and system data must remain protected from unauthorized access.  
-2. **Integrity:** Data must be accurate and reliable, ensuring no unauthorized alterations.  
+1. **Confidentiality:** User and system data must remain protected from unauthorized access.
+2. **Integrity:** Data must be accurate and reliable, ensuring no unauthorized alterations.
 3. **Availability:** Security measures should not compromise the platform's accessibility or performance.  
 4. **Compliance & trust:** Security is effective only when it aligns with regulations and builds trust with users.
 
@@ -24,7 +24,7 @@ These principles guide every decision, ensuring the platform remains secure and 
 
 PushFeedback offers several **configurable security features** that allow users to customize protection based on their needs:
 
-1. **Role-based authentication (RBAC):** Restricts admin panel access to authorized users, providing a segmented permission structure.
+1. **Role-based access control (RBAC):** Restricts admin panel access to authorized users, providing a segmented permission structure.
 
 2. **Domain restrictions:** Each project has a unique Project ID to limit where the feedback widget can be embedded. Only authorized domains can interact with the widget, ensuring controlled and secure usage.
 
@@ -34,11 +34,11 @@ PushFeedback offers several **configurable security features** that allow users 
 
 5. **Bearer authentication:** Enforces secure **Bearer Authentication** for all API communication between clients and servers, preventing unauthorized access to API resources.
 
-6. **Granular API permissions:** Each API key can be scoped with specific permissions (e.g., `project_read`, `feedback_create`) to ensure principle of least privilege and provide fine-grained access control.
+6. **Granular API permissions:** Each API key can be scoped with specific permissions (e.g., `project_read`, `feedback_create`) to ensure the principle of least privilege and provide fine-grained access control.
 
 ## Security architecture
 
-Beyond configurable settings, PushFeedback **security architecture** delivers comprehensive protections at the data, network, and access layers:
+Beyond configurable settings, PushFeedback's **security architecture** delivers comprehensive protections at the data, network, and access layers:
 
 1. **Network protection:** Firewalls, DDoS mitigation, and continuous monitoring help identify and mitigate threats. Logs capture security events and anomalies, providing real-time alerts and audit trails for proactive management.
 
@@ -49,6 +49,16 @@ Beyond configurable settings, PushFeedback **security architecture** delivers co
 4. **Logical account separation:** Customer data is strictly isolated to ensure that each account remains separate, preventing unauthorized access and ensuring that resources are only available to the rightful owner.
 
 5. **Regulatory compliance:** We adhere to **GDPR** to ensure user information is handled with transparency and in line with legal requirements.
+
+## AI data handling
+
+PushFeedback uses third-party AI providers to power optional features such as AI-generated feedback reports. The following safeguards are in place:
+
+- **Opt-out of model training:** PushFeedback has opted out of data training with all AI providers. Your feedback data is never used to train or improve their models.
+- **Data sent on demand:** Feedback data is only sent to AI providers when an AI feature is actively used. No data is shared passively or in the background.
+- **Admin control:** Team admins can disable all AI capabilities from the Team settings, ensuring no data is sent to AI providers. See [Opting out of AI reports](../administration/analytics#opting-out-of-ai-reports) for details.
+
+For more information on the AI providers we use, see [Our providers](providers).
 
 By combining **user-configurable security features** with a **robust, enterprise-grade security architecture**, PushFeedback provides a multi-layered defense that ensures both flexibility and high standards of protection.
 
