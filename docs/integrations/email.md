@@ -4,7 +4,7 @@ sidebar_label: Email
 
 # Email integration
 
-Using PushFeedback, you can forward user feedback directly to specific email addresses. This ensures that the right team members are immediately informed, leading to faster responses and a better user experience.
+PushFeedback can send email notifications to up to three addresses when users submit feedback.
 
 ![Email integration](./images/email-integration.png)
 
@@ -13,21 +13,13 @@ Using PushFeedback, you can forward user feedback directly to specific email add
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
 
-## Steps
+## Set up email notifications
 
-To activate the email notification integration in PushFeedback, follow the steps outlined below:
+1. Open [app.pushfeedback.com](https://app.pushfeedback.com) and log in.
 
-1. Open [app.pushfeedback.com](https://app.pushfeedback.com).
+2. Go to **Projects** and select your project.
 
-2. Log in using your account credentials.
-
-3. Once inside the dashboard, go to the **Projects** tab.
-
-4. Select the project you wish to configure.
-
-5. On the top-right corner of the page, click on the **Settings** button.
-
-6. Under **Integrations**, select **Email**.
+3. Click **Settings**, then under **Integrations**, select **Email**.
 
 7. Add the email addresses of the team members you'd like to notify when feedback is received.
 

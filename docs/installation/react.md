@@ -4,13 +4,13 @@ sidebar_label: React
 
 # Feedback widget for React
 
-Here's a step-by-step guide to help you install PushFeedback in your React project using NPM.
+PushFeedback collects user feedback directly from your website. This guide covers installation in a React project using NPM.
 
 ![Feedback widget for docs screenshot](./images/feedback-widget-starlight.png)
 
 ## Prerequisites
 
-Before you begin, you'll need to have the following:
+Before you begin, you need:
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
@@ -18,15 +18,7 @@ Before you begin, you'll need to have the following:
 
 ## Installation
 
-1. Open your terminal or command prompt. Navigate to your project's root directory using the `cd` command:
-
-    ```console
-    cd path/to/your/project
-    ```
-    
-    Replace `path/to/your/project` with your project's actual directory path.
-
-1. With your terminal still open, run the following command to install PushFeedback:
+1. Install PushFeedback:
 
     ```console
     npm install pushfeedback-react
@@ -70,6 +62,7 @@ Before you begin, you'll need to have the following:
 
 ## Next steps
 
-For more about customization and additional features exploration, check out the [Customization](/category/customization) section.
+Choose what to do next:
 
-Need assistance? We're here to help! Reach out to us at [PushFeedback Support](https://pushfeedback.com/contact).
+- [Customization](/category/customization) — Adjust the widget's layout, styles, and text.
+- [Integrations](/category/integrations) — Forward feedback to Slack, email, Jira, and more.

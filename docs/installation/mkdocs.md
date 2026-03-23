@@ -4,21 +4,19 @@ sidebar_label: MkDocs
 
 # Feedback widget for MkDocs
 
-Here's a step-by-step guide to help you install PushFeedback in your MkDocs project.
+PushFeedback collects user feedback directly from your website. This guide covers installation in a MkDocs project.
 
 ![Feedback widget for docs screenshot](./images/feedback-widget-starlight.png)
 
 ## Prerequisites
 
-Before you begin, you'll need to have the following:
+Before you begin, you need:
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
 - A MkDocs project.
 
 ## Installation
-
-To integrate the PushFeedback widget into your MkDocs site:
 
 1. Navigate to your docs folder and locate the `overrides` directory (create one if it doesn't exist).
 
@@ -67,6 +65,7 @@ To integrate the PushFeedback widget into your MkDocs site:
 
 ## Next steps
 
-For more about customization and additional features exploration, check out the [Customization](/category/customization) section.
+Choose what to do next:
 
-Need assistance? We're here to help! Reach out to us at [PushFeedback Support](https://pushfeedback.com/contact).
+- [Customization](/category/customization) — Adjust the widget's layout, styles, and text.
+- [Integrations](/category/integrations) — Forward feedback to Slack, email, Jira, and more.

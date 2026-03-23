@@ -78,6 +78,14 @@ const config = {
           src: 'img/PushFeedback-Logo.png',
           srcDark: 'img/PushFeedback-Logo-White.png',
         },
+        items: [
+          {
+            href: 'https://app.pushfeedback.com/accounts/signup/',
+            label: 'Sign up',
+            position: 'right',
+            className: 'navbar-signup-button',
+          },
+        ],
       },
       colorMode: {
         defaultMode: 'light',

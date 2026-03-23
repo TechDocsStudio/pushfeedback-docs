@@ -4,7 +4,7 @@ sidebar_label: Wordpress
 
 # Feedback widget for Wordpress
 
-Here's a step-by-step guide to help you install PushFeedback in your Wordpress site.
+PushFeedback collects user feedback directly from your website. This guide covers installation in a WordPress site.
 
 ![Feedback widget for docs screenshot](./images/feedback-widget-starlight.png)
 
@@ -15,8 +15,6 @@ Here's a step-by-step guide to help you install PushFeedback in your Wordpress s
 - A Wordpress website.
 
 ## Installation
-
-To embed the PushFeedback widget into your WordPress site:
 
 1. Access the admin dashboard of your WordPress website by navigating to `http://yourwebsite.com/wp-admin/`.
 1. Add the PushFeedback styles and scripts:
@@ -46,6 +44,7 @@ To embed the PushFeedback widget into your WordPress site:
 
 ## Next steps
 
-For more about customization and additional features exploration, check out the [Customization](/category/customization) section.
+Choose what to do next:
 
-Need assistance? We're here to help! Reach out to us at [PushFeedback Support](https://pushfeedback.com/contact).
+- [Customization](/category/customization) — Adjust the widget's layout, styles, and text.
+- [Integrations](/category/integrations) — Forward feedback to Slack, email, Jira, and more.

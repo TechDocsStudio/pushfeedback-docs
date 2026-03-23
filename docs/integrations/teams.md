@@ -4,8 +4,7 @@ sidebar_label: Teams
 
 # Teams integration
 
-Using PushFeedback, you can forward user feedback directly to your preferred Microsoft Teams channel using [incoming webhooks](https://api.slack.com/messaging/webhooks).
-This ensures that the right team members are immediately informed, leading to faster responses and a better user experience.
+PushFeedback sends feedback notifications to a Microsoft Teams channel using [incoming webhooks](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet).
 
 ![Teams integration](./images/teams-integration.png)
 
@@ -15,21 +14,13 @@ This ensures that the right team members are immediately informed, leading to fa
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
 - A Microsoft Teams workspace.
 
-## Steps
+## Set up the Teams integration
 
-To activate the Teams integration in PushFeedback, follow the steps outlined below:
+1. Open [app.pushfeedback.com](https://app.pushfeedback.com) and log in.
 
-1. Open [app.pushfeedback.com](https://app.pushfeedback.com).
+2. Go to **Projects** and select your project.
 
-2. Log in using your account credentials.
-
-3. Once inside the dashboard, go to the **Projects** tab.
-
-4. Select the project you wish to configure.
-
-5. On the top-right corner of the page, click on the **Settings** button.
-
-6. Under **Integrations**, select **Teams**.
+3. Click **Settings**, then under **Integrations**, select **Teams**.
 
 7. Add the incoming webhook URL provided by Teams. For detailed instructions on setting up incoming webhooks in Teams, refer to [Microsoft's documentation](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet).
 

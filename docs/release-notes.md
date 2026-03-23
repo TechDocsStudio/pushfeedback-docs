@@ -1,6 +1,6 @@
 # Release notes
 
-Stay up-to-date with the latest features, improvements, and updates to PushFeedback and its ecosystem of packages.
+Track features, improvements, and updates to PushFeedback.
 
 ## Product updates
 

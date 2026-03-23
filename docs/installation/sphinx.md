@@ -4,13 +4,13 @@ sidebar_label: Sphinx
 
 # Feedback widget for Sphinx
 
-Here's a step-by-step guide to help you install PushFeedback in your Sphinx project.
+PushFeedback collects user feedback directly from your website. This guide covers installation in a Sphinx project using PIP.
 
 ![Feedback widget for docs screenshot](./images/feedback-widget-starlight.png)
 
 ## Prerequisites
 
-Before you begin, you'll need to have the following:
+Before you begin, you need:
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
@@ -18,17 +18,7 @@ Before you begin, you'll need to have the following:
 
 ## Installation
 
-To integrate the PushFeedback widget into your Sphinx site:
-
-1. Open your terminal or command prompt. Navigate to your project's root directory using the `cd` command:
-
-    ```console
-    cd path/to/your/project
-    ```
-    
-    Replace `path/to/your/project` with your project's actual directory path.
-
-2. With your terminal still open, run the following command to install PushFeedback via PIP:
+1. Install the Sphinx extension:
 
     ```console
     pip install sphinx-pushfeedback
@@ -56,11 +46,9 @@ To integrate the PushFeedback widget into your Sphinx site:
 
     Once built, open your documentation in a web browser. Verify that the feedback button appears and works correctly on your site.
 
-## Next steps
+## Customization
 
-You can customize the PushFeedback widget to suit your needs. For example, you can change the widget's position, color, and more.
-
-To do so, you can add any of the following [configuration](../customization/layout.mdx)  options to your `conf.py` file, with the following modifications:
+Add any [configuration](../customization/layout.mdx) option to your `conf.py` file, with the following modifications:
 
 1. Prefix configuration options with `pushfeedback_`. For instance, `project` would be `pushfeedback_project`.
 

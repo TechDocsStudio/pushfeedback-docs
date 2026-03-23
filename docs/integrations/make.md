@@ -4,7 +4,7 @@ sidebar_label: Make
 
 # Make (Integromat) integration
 
-Make.com is a versatile automation platform that enables you to connect your apps and automate workflows, streamlining repetitive tasks without needing to code. With PushFeedback, you can integrate effortlessly with Make.com to design a wide range of automation workflows.
+PushFeedback sends feedback data to Make.com via webhooks, letting you route it to tools like Trello, Google Sheets, or Salesforce.
 
 ![Webhooks integration](./images/webhook-integration.png)
 
@@ -14,21 +14,13 @@ Make.com is a versatile automation platform that enables you to connect your app
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
 - A Make.com account.
 
-## Steps
+## Set up the Make integration
 
-To activate the webhook integration in PushFeedback, follow the steps outlined below:
+1. Open [app.pushfeedback.com](https://app.pushfeedback.com) and log in.
 
-1. Open [app.pushfeedback.com](https://app.pushfeedback.com).
+2. Go to **Projects** and select your project.
 
-2. Log in using your account credentials.
-
-3. Once inside the dashboard, go to the **Projects** tab.
-
-4. Select the project you wish to configure.
-
-5. On the top-right corner of the page, click on the **Settings** button.
-
-6. Under **Integrations**, select **Webhooks**.
+3. Click **Settings**, then under **Integrations**, select **Webhooks**.
 
 7. Enter the URL for the Make.com webhook where you intend to send feedback data. For assistance in configuring your webhook in Make.com, see their guide on [receiving a webhook from a web service](https://www.make.com/en/help/connections/receiving-a-webhook-from-a-web-service).
 
@@ -48,5 +40,3 @@ Make.com offers hundreds of integrations with popular apps and services, allowin
 - Notifying your team in Slack or Microsoft Teams whenever new feedback is submitted.
 - Adding feedback entries to a Google Sheets document for analysis and reporting.
 - Integrating with CRM systems like Salesforce to keep track of customer feedback.
-
-Start integrating PushFeedback with Make.com today to unlock the full potential of your feedback management process.

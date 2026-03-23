@@ -4,7 +4,7 @@ sidebar_label: Webhook
 
 # Incoming Webhooks integration
 
-Webhooks are a powerful way to send real-time data from one application to another. With PushFeedback, you can utilize webhooks to submit user feedback to any URL of your choice once it gets created. This allows you to integrate PushFeedback with your existing workflows and systems.
+PushFeedback sends a POST request to a URL of your choice each time a user submits feedback. Use webhooks to connect PushFeedback with any external system.
 
 
 ![Webhooks integration](./images/webhook-integration.png)
@@ -14,21 +14,13 @@ Webhooks are a powerful way to send real-time data from one application to anoth
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
 
-## Steps
+## Set up a webhook
 
-To activate the webhook integration in PushFeedback and start forwarding user feedback to your desired endpoint, follow the steps outlined below:
+1. Open [app.pushfeedback.com](https://app.pushfeedback.com) and log in.
 
-1. Open [app.pushfeedback.com](https://app.pushfeedback.com).
+2. Go to **Projects** and select your project.
 
-2. Log in using your account credentials.
-
-3. Once inside the dashboard, go to the **Projects** tab.
-
-4. Select the project you wish to configure.
-
-5. On the top-right corner of the page, click on the **Settings** button.
-
-6. Under **Integrations**, select **Webhooks**.
+3. Click **Settings**, then under **Integrations**, select **Webhooks**.
 
 7. Add the URL of the endpoint where you want to send the feedback data.
 

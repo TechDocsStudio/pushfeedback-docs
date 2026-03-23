@@ -24,9 +24,7 @@ function FeedbackWidget() {
 
   return (
     <div className="feedback-widget margin-top--md margin-bottom--md">
-      <div className="margin-bottom--sm">
-        <b>Was this helpful?</b>
-      </div>
+      <span className="feedback-widget-label">Was this helpful?</span>
       <span className="feedback-widget-positive">
         <feedback-button
           project={projectId}
@@ -46,7 +44,7 @@ function FeedbackWidget() {
           </button>
         </feedback-button>
       </span>
-      <span className="feedback-widget-negative margin-left--sm">
+      <span className="feedback-widget-negative">
         <feedback-button
           project={projectId}
           rating="0"
@@ -66,29 +64,51 @@ function FeedbackWidget() {
         </feedback-button>
       </span>
 
-      {/* Style Block for Button Hover */}
       <style>
         {`
-          .feedback-widget button {
-            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-            border: 2px solid var(--feedback-primary-color);
-            color: var(--feedback-primary-color);
-            background-color: transparent;
-            border-radius: 8px;
-            padding: 8px 16px;
-            cursor: pointer;
+          .feedback-widget {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
           }
 
-          .feedback-widget button.selected {
-            background-color: var(--feedback-primary-color);
-            color: white;
-            border-color: var(--feedback-primary-color);
+          .feedback-widget-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--ifm-heading-color);
+            margin-right: 0.25rem;
+          }
+
+          .feedback-widget button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            border: 1px solid var(--ifm-color-emphasis-300);
+            color: var(--ifm-color-emphasis-600);
+            background-color: transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+          }
+
+          .feedback-widget button svg {
+            width: 16px;
+            height: 16px;
           }
 
           .feedback-widget button:hover {
-            background-color: var(--feedback-primary-color);
-            color: white;
-            border-color: var(--feedback-primary-color);
+            background-color: rgba(0, 112, 244, 0.08);
+            border-color: var(--ifm-color-primary);
+            color: var(--ifm-color-primary);
+          }
+
+          .feedback-widget button.selected {
+            background-color: rgba(0, 112, 244, 0.1);
+            border-color: var(--ifm-color-primary);
+            color: var(--ifm-color-primary);
           }
         `}
       </style>

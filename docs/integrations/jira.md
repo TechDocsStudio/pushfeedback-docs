@@ -4,9 +4,7 @@ sidebar_label: Jira
 
 # Jira integration
 
-With PushFeedback, you can forward user feedback directly to your preferred Jira board using [Jira Cloud Automation](https://support.atlassian.com/cloud-automation/docs/jira-cloud-automation/) or [Jira Data Center Automations](https://confluence.atlassian.com/automation/), depending on your distribution.
-
-This integration lets you manage feedback using the same tools for project management, enhancing assignment and tracking of feedback issues.
+PushFeedback creates Jira issues from user feedback using [Jira Cloud Automation](https://support.atlassian.com/cloud-automation/docs/jira-cloud-automation/) or [Jira Data Center Automations](https://confluence.atlassian.com/automation/). Each feedback submission becomes a trackable issue on your board.
 
 ## Prerequisites
 
@@ -16,8 +14,6 @@ Before you begin, ensure you have:
 - A Jira workspace (Cloud or Data Center) with access to Automation options.
 
 ## 1. Configure Jira automations
-
-This section guides you through setting up the automation rule in Jira that will receive feedback from PushFeedback.
 
 ### Create the automation rule
 
@@ -80,14 +76,9 @@ This section guides you through setting up the automation rule in Jira that will
 
 ## 2. Configure PushFeedback
 
-Now that your Jira automation is set up, let's configure PushFeedback to send feedback to it.
-
-1. Open [app.pushfeedback.com](https://app.pushfeedback.com).
-2. Log in with your account credentials.
-3. Once in the dashboard, go to the **Projects** tab.
-4. Select the project you wish to configure.
-5. In the top-right corner, click on the **Settings** button.
-6. Under **Integrations**, select **Jira**.
+1. Open [app.pushfeedback.com](https://app.pushfeedback.com) and log in.
+2. Go to **Projects** and select your project.
+3. Click **Settings**, then under **Integrations**, select **Jira**.
 
 7. Configure the webhook settings:
 

@@ -4,19 +4,17 @@ sidebar_label: LearnDash
 
 # Feedback widget for LearnDash
 
-This guide will walk you through installing a feedback widget in LearnDash CMS to gather user feedback on your courses, lessons, quizzes, or topics. We will cover two installation modes: **Basic installation** (automatic placement) and **Advanced setup** (custom placement).
+PushFeedback collects user feedback directly from your website. This guide covers installation in LearnDash, with options for automatic and custom widget placement.
 
 ## Prerequisites
 
-Before you begin, ensure you have the following:
+Before you begin, you need:
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
 - Access to your LearnDash website in [WordPress](wordpress.md).
 
 ## Basic installation
-
-To embed the PushFeedback widget into your LearnDash site:
 
 1. Access the admin dashboard of your LearnDash website by navigating to `http://yourwebsite.com/wp-admin/`.
 
@@ -72,13 +70,9 @@ To embed the PushFeedback widget into your LearnDash site:
 
 ## Advanced setup: Custom placement
 
-This alternative installation method is best for those projects that require granular control over the widget's positioning.
-
-For example, you can use it to embedded PushFeedback at the end of every page as follows:
+For example, embed PushFeedback at the end of every page:
 
 ![Feedback inline end page](./images/feedback-learndash-custom.png)
-
-To embed the PushFeedback widget at the end of every LearnDash lesson, quiz, or topic:
 
 1. Access the admin dashboard of your LearnDash website by navigating to `http://yourwebsite.com/wp-admin/`.
 
@@ -150,4 +144,7 @@ To embed the PushFeedback widget at the end of every LearnDash lesson, quiz, or 
 
 ## Next steps
 
-For more about customization and additional features exploration, check out the [Customization](/category/customization) section.
+Choose what to do next:
+
+- [Customization](/category/customization) — Adjust the widget's layout, styles, and text.
+- [Integrations](/category/integrations) — Forward feedback to Slack, email, Jira, and more.

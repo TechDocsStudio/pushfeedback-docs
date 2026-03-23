@@ -4,13 +4,9 @@ sidebar_position: 3
 
 # Configure URLs
 
-To ensure users can only submit feedback from your site, you must configure which URLs in your project allow the Feedback widget to be installed. This enhances security by restricting where feedback can be submitted from.
-
-This guide explains how to configure URLs for your projects in PushFeedback.
+Each project has a list of allowed URLs. The feedback widget only works on domains in this list, preventing unauthorized use.
 
 ## Basic configuration
-
-Follow the steps below to configure an URL for your project:
 
 1. Open [app.pushfeedback.com](https://app.pushfeedback.com).
 2. Log in using your account credentials.
@@ -31,8 +27,6 @@ This feature is only available on the [Unlimited](https://pushfeedback.com#prici
 
 If you need to add more than one URL, such as for different services like staging, development, and production, but want to use the same integration without creating separate projects, you can list new URLs in the PushFeedback dashboard.
 
-Follow the steps below to list additional URLs for your project:
-
 1. Open [app.pushfeedback.com](https://app.pushfeedback.com).
 2. Log in using your account credentials.
 3. Once inside the dashboard, click **Projects** in the top navigation bar.
@@ -49,8 +43,6 @@ Follow the steps below to list additional URLs for your project:
 By default we add `localhost` and `127.0.0.0` so that you can test it in your local environment too.
 You can remove them once you finish integrating the widget to prevent spam.
 :::
-
-By configuring your URLs correctly, you ensure that PushFeedback works across all your environments.
 
 ## Common error
 

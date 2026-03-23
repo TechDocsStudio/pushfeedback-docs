@@ -5,61 +5,38 @@ sidebar_label: Overview
 
 # Security overview
 
-At PushFeedback, security is a core principle of our platform, designed to meet enterprise-level requirements with robust features that ensure data protection, compliance, and transparency.
+PushFeedback is designed to meet enterprise security requirements for data protection, compliance, and transparency.
 
-This document details how we protect sensitive information, enforce security controls, and comply with industry standards.
+## Configurable security features
 
-## Security framework
-
-Our security approach is grounded in four key principles:
-
-1. **Confidentiality:** User and system data must remain protected from unauthorized access.
-2. **Integrity:** Data must be accurate and reliable, ensuring no unauthorized alterations.
-3. **Availability:** Security measures should not compromise the platform's accessibility or performance.  
-4. **Compliance & trust:** Security is effective only when it aligns with regulations and builds trust with users.
-
-These principles guide every decision, ensuring the platform remains secure and user data is safeguarded.
-
-## Key security features
-
-PushFeedback offers several **configurable security features** that allow users to customize protection based on their needs:
-
-1. **Role-based access control (RBAC):** Restricts admin panel access to authorized users, providing a segmented permission structure.
-
-2. **Domain restrictions:** Each project has a unique Project ID to limit where the feedback widget can be embedded. Only authorized domains can interact with the widget, ensuring controlled and secure usage.
-
-3. **reCAPTCHA v3 protection:** Optional Google reCAPTCHA v3 integration provides invisible bot detection and spam prevention. Learn how to [enable reCAPTCHA](recaptcha).
-
-4. **Rate limiting:** To protect the system from abuse, rate limits are applied per user session and IP address. This helps prevent spam, DDoS attacks, and unauthorized interactions.
-
-5. **Bearer authentication:** Enforces secure **Bearer Authentication** for all API communication between clients and servers, preventing unauthorized access to API resources.
-
-6. **Granular API permissions:** Each API key can be scoped with specific permissions (e.g., `project_read`, `feedback_create`) to ensure the principle of least privilege and provide fine-grained access control.
+| Feature | Description |
+|---------|-------------|
+| Role-based access (RBAC) | Restricts dashboard access to authorized users with segmented permissions. |
+| Domain restrictions | Limits which domains can embed the feedback widget. |
+| reCAPTCHA v3 protection | Optional invisible bot detection and spam prevention. [Learn more](recaptcha). |
+| Rate limiting | Per-session and per-IP limits to prevent spam and abuse. |
+| Bearer authentication | Enforces API key authentication for all API requests. |
+| Granular API permissions | Scope each API key to specific permissions (`project_read`, `feedback_create`). |
 
 ## Security architecture
 
-Beyond configurable settings, PushFeedback's **security architecture** delivers comprehensive protections at the data, network, and access layers:
-
-1. **Network protection:** Firewalls, DDoS mitigation, and continuous monitoring help identify and mitigate threats. Logs capture security events and anomalies, providing real-time alerts and audit trails for proactive management.
-
-2. **Data protection and resilience:** Sensitive data is encrypted both in transit and at rest. Regular automated backups ensure resilience, allowing for quick recovery in the event of failures or cyber incidents.
-
-3. **Data integrity and auditability:** We maintain detailed audit logs of security-sensitive operations to prevent unauthorized modifications. This provides transparency and ensures accountability by tracking system interactions.
-
-4. **Logical account separation:** Customer data is strictly isolated to ensure that each account remains separate, preventing unauthorized access and ensuring that resources are only available to the rightful owner.
-
-5. **Regulatory compliance:** We adhere to **GDPR** to ensure user information is handled with transparency and in line with legal requirements.
+| Layer | Protection |
+|-------|------------|
+| Network | Firewalls, DDoS mitigation, continuous monitoring, and real-time alerts. |
+| Data encryption | Encrypted in transit and at rest. Automated backups for recovery. |
+| Audit logs | Detailed logs of security-sensitive operations for accountability. |
+| Account isolation | Customer data is strictly separated between accounts. |
+| Model training opt-out | Customer data is never shared with third-party model training. |
+| GDPR compliance | User data handled in line with European data protection regulations. |
 
 ## AI data handling
 
 PushFeedback uses third-party AI providers to power optional features such as AI-generated feedback reports. The following safeguards are in place:
 
-- **Opt-out of model training:** PushFeedback has opted out of data training with all AI providers. Your feedback data is never used to train or improve their models.
-- **Data sent on demand:** Feedback data is only sent to AI providers when an AI feature is actively used. No data is shared passively or in the background.
-- **Admin control:** Team admins can disable all AI capabilities from the Team settings, ensuring no data is sent to AI providers. See [Opting out of AI reports](../administration/analytics#opting-out-of-ai-reports) for details.
+- **Opt-out of model training:** Your feedback data is never used to train or improve AI models.
+- **Data sent on demand:** Feedback data is only sent to AI providers when an AI feature is actively used.
+- **Admin control:** Team admins can disable all AI capabilities from Team settings. See [Opting out of AI reports](../administration/analytics#opting-out-of-ai-reports) for details.
 
 For more information on the AI providers we use, see [Our providers](providers).
 
-By combining **user-configurable security features** with a **robust, enterprise-grade security architecture**, PushFeedback provides a multi-layered defense that ensures both flexibility and high standards of protection.
-
-For more details on our data handling practices, see our [Privacy Policy](https://pushfeedback.com/privacy).
+See the [Privacy Policy](https://pushfeedback.com/privacy) for details on data handling.

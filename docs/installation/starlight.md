@@ -7,21 +7,19 @@ import TabItem from '@theme/TabItem';
 
 # Feedback widget for Starlight
 
-Here's a step-by-step guide to help you install PushFeedback in your Starlight (Astro) project.
+PushFeedback collects user feedback directly from your website. This guide covers installation in a Starlight (Astro) project.
 
 ![Feedback widget for docs screenshot](./images/feedback-widget-starlight.png)
 
 ## Prerequisites
 
-Before you begin, you'll need to have the following:
+Before you begin, you need:
 
 - A PushFeedback account. If you don't have one, [sign up for free](https://app.pushfeedback.com/accounts/signup/).
 - A project created in your PushFeedback dashboard. If you haven't created one yet, follow the steps in the [Quickstart](../quickstart.md#2-create-a-project) guide.
 - A Starlight site.
 
 ## Installation
-
-To integrate the PushFeedback widget into your Starlight site:
 
 1. Go to `src/components`. If `components` does not exist, create the directory.
 1. Create a new file `CustomFooter.astro` under your docs project `src/components` directory with the following content:
@@ -226,6 +224,7 @@ Remember to replace `<YOUR_PROJECT_ID>` with your project's ID from the [PushFee
 
 ## Next steps
 
-For more about customization and additional features exploration, check out the [Customization](/category/customization) section.
+Choose what to do next:
 
-Need assistance? We're here to help! Reach out to us at [PushFeedback Support](https://pushfeedback.com/contact).
+- [Customization](/category/customization) — Adjust the widget's layout, styles, and text.
+- [Integrations](/category/integrations) — Forward feedback to Slack, email, Jira, and more.

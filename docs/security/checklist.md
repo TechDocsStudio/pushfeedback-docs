@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Production checklist
 
-Use this checklist to confirm that essential security measures are configured for optimal protection on the PushFeedback widget before going to production. Each item provides straightforward actions to help you secure data, control access, and maintain compliance.
+Confirm these security measures before deploying the PushFeedback widget to production.
 
 ## For widget integrations
 
@@ -34,5 +34,3 @@ The following steps apply only to direct integrations using the **Enterprise API
 - [ ] **Use secure API key storage**: Store API keys in environment variables, encrypted configuration files, or dedicated secrets management systems (e.g., AWS Secrets Manager, Azure Key Vault, HashiCorp Vault). Never hardcode keys in your application code or commit them to version control.
 
 - [ ] **Deactivate unused tokens**: Immediately disable any tokens that are no longer in use to prevent unauthorized access.
-
-Completing this checklist ensures that your PushFeedback integration is secure, protecting data integrity and meeting compliance standards.

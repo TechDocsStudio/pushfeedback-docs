@@ -5,20 +5,19 @@ slug: /
 
 # Quickstart
 
-Welcome to the PushFeedback documentation!
-In a few minutes, you'll have the PushFeedback widget up and running on your site.
+PushFeedback adds a feedback widget to your documentation or website. Users rate pages, leave comments, and attach screenshots — giving your team actionable input without leaving the site.
+
+In this tutorial, you create a PushFeedback account, set up a project, and add the widget to your site. Later, you can customize its appearance and connect it to tools like Slack or Jira.
 
 ## 1. Create your PushFeedback account
 
-To use the PushFeedback widget, start by setting up your account:
-
 1. Open [app.pushfeedback.com](https://app.pushfeedback.com).
-2. Click on the **Sign Up** button located in the top bar.
-3. Follow the on-screen instructions to set up your account.
+2. Click the **Sign Up** button in the top bar.
+3. Complete the registration form.
 
     ![Create account](./images/create-account.png)
 
-With your account ready, move on to creating your first project.
+After creating your account, create a project to configure the widget.
 
 ## 2. Create a project
 
@@ -26,14 +25,12 @@ With your account ready, move on to creating your first project.
 <iframe src="https://player.vimeo.com/video/1014981817?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></iframe></div>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
-To create your first project, follow these steps:
-
 1. In your PushFeedback dashboard, click the **Projects** tab in the top navbar.
 2. Click the **Create project** button.
-3. Step through the wizard, providing details about your project as prompted:
+3. Step through the wizard:
 
-    * **URL configuration:** Specify the URL where you intend to use the feedback widget. This URL must corresponds to the exact domain or subdomain where the widget will be used. For example, in our case we use `docs.pushfeedback.com` instead of `pushfeedback.com`.
-    * **Email notification setup (optional):** You have the option to define up to three email addresses that will receive notifications.
+    * **URL configuration:** Specify the URL where you intend to use the feedback widget. This URL must correspond to the exact domain or subdomain where the widget is used. For example, use `docs.pushfeedback.com` instead of `pushfeedback.com`.
+    * **Email notification setup (optional):** Define up to three email addresses to receive notifications.
     * **Get your code snippet:** The final step of the wizard shows your project code snippet, which contains your unique Project ID.
 
 ## 3. Add the widget to your site
@@ -66,7 +63,7 @@ To integrate the PushFeedback widget into your website:
 
 ## 4. Customize the widget
 
-Get the PushFeedback widget to blend with your website's design and functionality. Here's a quick look at some customization options:
+The widget supports the following customization options:
 
 * **Layout:** Choose the widget's placement on your site—bottom right, top left, or even integrate it with an existing button.
 
@@ -78,6 +75,8 @@ For detailed configuration steps, see our [Customization](/category/customizatio
 
 ## Next steps
 
-Congratulations on setting up the PushFeedback widget! Now, your users can submit feedback from your site.
+Choose what to do next:
 
-Stay proactive. Monitor your [dashboard](https://apps.pushfeedback.com) to gain insights from user feedback and improve your website accordingly.
+- [Customization](/category/customization) — Adjust the widget's layout, styles, and text.
+- [Integrations](/category/integrations) — Forward feedback to Slack, email, Jira, and more.
+- [Dashboard](https://app.pushfeedback.com) — Monitor and analyze incoming feedback.

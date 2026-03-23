@@ -24,6 +24,12 @@
   --biel-primary-color: #0070f4;
   --biel-button-dark-bg-color: #18181b;
   --biel-primary-hover-color: #18181b;
+  --feedback-button-border-radius: 8px;
+  --biel-search-button-border-radius: 8px;
+  --biel-search-button-text-font-size: 14px;
+  --biel-search-button-width: 400px;
+  --biel-search-button-max-width: 400px;
+  --biel-search-button-bg-color: transparent;
   --ifm-navbar-item-padding-vertical: 0;
 
   /* Typography improvements */
@@ -517,6 +523,16 @@ a.card.padding--lg {
   margin-bottom: 1.5rem;
 }
 
+/* Hide emoji icons on category index cards */
+[class*="generatedIndexPage"] [class*="cardTitle_"] {
+  font-size: 0;
+}
+
+[class*="generatedIndexPage"] [class*="cardTitle_"]::after {
+  content: attr(title);
+  font-size: 1.125rem;
+}
+
 /* Category index cards - proper spacing */
 [class*="generatedIndexPage"] .row {
   margin-left: -0.5rem;
@@ -733,5 +749,106 @@ a.card.padding--lg {
         backdrop-filter: blur(12px);
         background-color: initial;
     }
+  }
+}
+
+/* Navbar right items — order: toggle, signup */
+.navbar__items--right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__items--right [class*="colorModeToggle"] {
+  order: 1;
+}
+
+.navbar__items--right .navbar-signup-button {
+  order: 2;
+}
+
+/* Navbar sign-up button */
+.navbar-signup-button {
+  background-color: #0070f4;
+  color: #fff !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.4rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: background-color 0.15s;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+.navbar-signup-button:hover {
+  background-color: #005fcf;
+  color: #fff !important;
+}
+
+/* Hide external link icon on signup button */
+.navbar-signup-button svg {
+  display: none;
+}
+
+/* Theme toggle — squared, matches signup button height */
+.navbar [class*="toggle_"] {
+  width: 36px;
+  height: 36px;
+}
+
+.navbar [class*="toggleButton_"] {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar [class*="toggleButton_"]:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.navbar [class*="toggleButton_"] svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Mobile: hide signup, reset toggle size, normal search flow */
+@media (max-width: 996px) {
+  :root {
+    --biel-search-button-width: auto;
+    --biel-search-button-max-width: none;
+  }
+
+  .navbar-signup-button {
+    display: none;
+  }
+
+  .navbar [class*="toggle_"],
+  .navbar [class*="toggleButton_"] {
+    width: 32px;
+    height: 32px;
+  }
+
+  .navbar [class*="toggleButton_"] svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Desktop: center search in navbar */
+@media (min-width: 997px) {
+  .navbar__inner {
+    position: relative;
+  }
+
+  .navbar__items--right [class*="searchBox"] {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
